@@ -1,0 +1,74 @@
+.advantage {
+  min-height: 817px;
+  background-color: #f3f0e7;
+  padding-top: 60px;
+  text-align: center;
+}
+.advantage .advantage__title {
+  font-family: PfagoraSansPro-Xthin;
+  font-size: 3.75em;
+  font-weight: 100;
+  color: #000;
+  display: block;
+  margin-bottom: 66px;
+}
+.advantage .advantage__container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1080px;
+}
+.advantage .advantage__block {
+  max-width: 314px;
+  text-align: center;
+  align-items: center;
+}
+@media (max-width: 627px) {
+  .advantage .advantage__block {
+    margin-bottom: 30px;
+  }
+}
+.advantage .advantage__block:last-child {
+  margin: 0;
+}
+.advantage .advantage__ellipse {
+  width: 266px;
+  height: 266px;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+.advantage .advantage__ellipse:first-child {
+  background-color: #fff;
+}
+.advantage .advantage__subtitle {
+  font-family: PFAgoraSansPro-Light;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.advantage .advantage__text {
+  font-family: PFAgoraSansPro-Light;
+  font-weight: 300;
+}
+.advantage .advantage__btn {
+  margin-bottom: 30px;
+}
+.social {
+  background-image: url(img/social.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.editing {
+  background-image: url(img/editing.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.templates {
+  background-image: url(img/templates.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

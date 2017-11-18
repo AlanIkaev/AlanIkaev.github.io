@@ -1,0 +1,20 @@
+@font-face{
+	font-family: PfagoraSansPro-Xthin;
+	src:url(../fonts/PfagoraSansPro-Xthin.ttf);
+}
+@font-face{
+	font-family: PfagoraSansPro-Regular;
+	src:url(../fonts/PfagoraSansPro-Regular.woff);
+}
+@font-face{
+	font-family: PfagoraSansPro-Thin;
+	src:url(../fonts/PfagoraSansPro-Thin.woff);
+}
+@font-face{
+	font-family: PfagoraSansPro-Light;
+	src:url(../fonts/PfagoraSansPro-Light.woff);
+}
+@font-face{
+	font-family: PfagoraSansPro-Bold;
+	src:url(../fonts/PfagoraSansPro-Bold.woff);
+}

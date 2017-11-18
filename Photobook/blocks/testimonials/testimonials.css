@@ -1,0 +1,84 @@
+.testimonials {
+  min-height: 767px;
+  background-image: url(img/background.png);
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 900px) {
+  .testimonials {
+    background: #fff;
+  }
+}
+.testimonials .testimonials__inner {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1080px;
+  padding-top: 41px;
+}
+.testimonials .testimonials__title {
+  font-family: PfagoraSansPro-Xthin;
+  font-size: 3.75em;
+  font-weight: 100;
+  color: #000;
+  display: block;
+  margin-bottom: 57px;
+}
+@media (max-width: 1100px) {
+  .testimonials .testimonials__title {
+    text-align: center;
+  }
+}
+.testimonials .testimonials__block {
+  max-width: 540px;
+}
+@media (max-width: 1100px) {
+  .testimonials .testimonials__block {
+    padding: 0 10px;
+  }
+}
+.testimonials .testimonials__avatar {
+  width: 158px;
+  height: 158px;
+  border-radius: 100%;
+  margin-right: 30px;
+}
+.testimonials .testimonials__info {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.testimonials .testimonials__usrname {
+  font-family: PFAgoraSansPro-Light;
+  font-size: 1.875em;
+  font-weight: 300;
+  margin: 0;
+}
+.testimonials .testimonials__usrcareer {
+  font-family: PFAgoraSansPro-Light;
+  font-size: 1.124em;
+  font-weight: 300;
+  margin: 0;
+}
+.testimonials .testimonials__text {
+  font-family: PFAgoraSansPro-Light;
+  font-size: 1.125em;
+  font-weight: 300;
+}
+.testimonials .testimonials__nextbtn {
+  text-align: right;
+}
+@media (max-width: 1100px) {
+  .testimonials .testimonials__button {
+    text-align: center;
+  }
+}
+.nextbtn {
+  font-family: PfagoraSansPro-Thin;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.nextbtn:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,91 @@
+@import (reference) "../../global-styles/global.less";
+
+.testimonials{
+	min-height: 767px;
+	background-image: url(img/background.png);
+	background-size: cover;
+	background-position: center;
+
+	@media (max-width: 900px){
+		background: @white;
+	}
+
+	.testimonials__inner{
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 1080px;
+		padding-top: 41px;
+	}
+
+	.testimonials__title{
+		.h1;
+		margin-bottom: 57px;
+
+		@media (max-width: 1100px){
+			text-align: center;
+		}
+	}
+
+	.testimonials__block{
+		max-width: 540px;
+
+		@media (max-width: 1100px){
+			padding: 0 10px;
+		}
+	}
+
+	.testimonials__avatar{
+		width: 158px;
+		height: 158px;
+		border-radius: 100%;
+		margin-right: 30px;
+	}
+
+	.testimonials__info{
+		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+
+	.testimonials__usrname{
+		font-family: PFAgoraSansPro-Light;
+		font-size: 1.875em;
+		font-weight: 300;
+		margin: 0;
+	}
+
+	.testimonials__usrcareer{
+		font-family: PFAgoraSansPro-Light;
+		font-size: 1.124em;
+		font-weight: 300;
+		margin: 0;
+	}
+
+	.testimonials__text{
+		font-family: PFAgoraSansPro-Light;
+		font-size: 1.125em;
+		font-weight: 300;
+	}
+
+	.testimonials__nextbtn{
+		text-align: right;
+	}
+
+	.testimonials__button{
+		@media (max-width: 1100px){
+			text-align: center;
+		}
+	}
+}
+
+.nextbtn{
+	font-family: PfagoraSansPro-Thin;
+	text-decoration: none;
+	color: @black;
+	position: relative;
+	
+	&:hover{
+		text-decoration: underline;
+	}
+}

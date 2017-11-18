@@ -1,0 +1,67 @@
+.steps {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+}
+@media (min-width: 320px) and (max-width: 1036px) {
+  .steps {
+    display: none;
+  }
+}
+.steps .steps__inner {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 51px 0px 91px 0px;
+}
+.step {
+  width: 33.33%;
+  position: relative;
+  text-align: center;
+  font-family: PFAgoraSansPro-Light;
+  margin-right: 130px;
+  background-color: white;
+}
+.step:before {
+  content: "";
+  text-align: center;
+  width: 139px;
+  height: 139px;
+  border: 5px solid #ffd200;
+  margin-bottom: 10px;
+  display: block;
+  border-radius: 50%;
+}
+.step:after {
+  content: "";
+  width: 100%;
+  border: 2px dashed #ffd200;
+  position: absolute;
+  top: 70px;
+  right: 140px;
+  z-index: -1;
+}
+.step:first-child {
+  background-image: url(img/step-one.png);
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+}
+.step:first-child:after {
+  content: none;
+}
+.step:nth-child(2) {
+  background-image: url(img/step-two.png);
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+}
+.step:nth-child(3) {
+  background-image: url(img/step-three.png);
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+}
+.step:last-child {
+  background-image: url(img/step-four.png);
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+  margin: 0;
+}

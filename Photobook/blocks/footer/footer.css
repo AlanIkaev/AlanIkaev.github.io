@@ -1,0 +1,115 @@
+.footer {
+  padding-top: 50px;
+  min-height: 377px;
+  position: relative;
+  background-color: #ffd200;
+}
+.footer .footer__container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .footer .footer__container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer .footer__menu {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  width: 57.4%;
+}
+@media (max-width: 768px) {
+  .footer .footer__menu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+.footer .footer__list {
+  border-top: 1px solid #000;
+  width: 24.5%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 25px;
+}
+@media (max-width: 768px) {
+  .footer .footer__list {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+.footer .footer__link {
+  font-family: PFAgoraSansPro-Regular;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+.footer .footer__link:hover {
+  color: #e11a27;
+}
+.footer .footer__item {
+  margin-bottom: 10px;
+}
+.footer .footer__item:last-child {
+  margin: 0;
+}
+.footer .footer__social {
+  padding-top: 25px;
+  border-top: 1px solid #000;
+  width: 14.4%;
+}
+@media (max-width: 768px) {
+  .footer .footer__social {
+    width: 50%;
+  }
+}
+.footer .footer__rights {
+  width: 100%;
+  margin-bottom: 0;
+  font-family: PfagoraSansPro-Regular;
+  font-size: 0.875em;
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .footer .footer__rights {
+    position: absolute;
+    bottom: 0;
+  }
+}
+.icons {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  width: 71%;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .icons {
+    margin-bottom: 20px;
+    justfy-content: space-around;
+    width: 100%;
+  }
+}
+.icons .icons__link {
+  display: inline-block;
+}
+.facebook:hover {
+  fill: #3b5998;
+}
+.vkontakte:hover {
+  fill: #45668e;
+}
+.instagram:hover {
+  fill: #f56040;
+}

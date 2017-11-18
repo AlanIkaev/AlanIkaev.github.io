@@ -1,0 +1,83 @@
+@import (reference) "../../global-styles/global.less";
+
+.advantage{
+	min-height: 817px;
+	background-color: #f3f0e7;
+	padding-top: 60px;
+	text-align: center;
+
+	.advantage__title{
+		.h1;
+		margin-bottom: 66px;
+	}
+
+	.advantage__container{
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		max-width: 1080px;
+	}
+
+	.advantage__block{
+		max-width: 314px;
+		text-align: center;
+		align-items: center;
+
+		@media (max-width: 627px){
+			margin-bottom: 30px;
+		}
+
+		&:last-child{
+			margin: 0;
+		}
+	}
+
+	.advantage__ellipse{
+		width: 266px;
+		height: 266px;
+		margin: 0 auto;
+		border-radius: 100%;
+
+		&:first-child{
+			background-color: @white;
+		}
+	}
+
+	.advantage__subtitle{
+		font-family: PFAgoraSansPro-Light;
+		font-size: 1.5em;
+		font-weight: 300;
+	}
+
+	.advantage__text{
+		font-family: PFAgoraSansPro-Light;
+		font-weight: 300;
+	}
+
+	.advantage__btn{
+		margin-bottom: 30px;
+	}
+}
+
+.social{
+	background-image: url(img/social.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.editing{
+	background-image: url(img/editing.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.templates{
+	background-image: url(img/templates.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}

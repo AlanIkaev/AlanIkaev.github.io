@@ -1,0 +1,43 @@
+@white: #fff;
+@black: #000;
+@yellow: #ffd200;
+@crimson: #e11a27;
+@btn-color: #212121;
+
+.btn{
+	display: inline-block;
+	font-family: PfagoraSansPro-Thin;
+	font-size: 1.625em;
+	color: @btn-color;
+	text-transform: uppercase;
+	border: 1px solid @black;
+	border-radius: 10px;
+	padding: .625em 1.5625em;
+	text-decoration: none;
+	white-space: nowrap;
+	text-align: center;
+	margin: 70px auto;
+
+	&:hover{
+		background-color:@crimson;
+		border:1px solid transparent; 
+		color:white;
+		transition: .3s ease;
+	}
+
+	@media (max-width: 425px){
+		padding: .625em .30em;
+	}
+
+	@media (min-width: 1024px){
+		padding: .625em 2.1875em;
+	}
+}
+
+.h1{
+	font-family: PfagoraSansPro-Xthin;
+	font-size: 3.75em;
+	font-weight: 100;
+	color:@black;
+	display:block;
+}

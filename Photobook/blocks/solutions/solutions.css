@@ -1,0 +1,103 @@
+.solutions {
+  padding-top: 60px;
+}
+.solutions .solutions__title {
+  font-family: PfagoraSansPro-Xthin;
+  font-size: 3.75em;
+  font-weight: 100;
+  color: #000;
+  display: block;
+  text-align: center;
+  margin-bottom: 66px;
+}
+.solutions .solutions__container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 115px;
+  display: flex;
+  display: -webkit-flex;
+  max-width: 1080px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.offer {
+  width: 300px;
+  position: relative;
+  background-color: #ffd200;
+  border-radius: 10px;
+}
+.offer:hover {
+  box-shadow: 15px solid black;
+}
+@media (max-width: 599px) {
+  .offer:first-child {
+    margin-bottom: 50px;
+  }
+}
+.offer:last-child {
+  margin: 0;
+}
+@media (max-width: 960px) {
+  .offer {
+    margin-bottom: 30px;
+  }
+}
+.offer .offer__title {
+  font-family: PFAgoraSansPro-Regular;
+  font-size: 2.251em;
+  text-align: center;
+  font-weight: 400;
+  padding: 15px 0px;
+}
+.offer .offer__inner {
+  position: relative;
+  width: 98%;
+  height: 253px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  list-style-image: url(img/li.png);
+}
+.offer .offer__price {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-family: PFAgoraSansPro-Light;
+  font-size: 3.751em;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+}
+.offer .offer__subtitle {
+  font-family: PFAgoraSansPro-Thin;
+  font-size: 1.354em;
+  font-weight: 100;
+  text-align: center;
+}
+.offer .offer__item {
+  padding-left: 5px;
+  padding-bottom: 2px;
+  font-size: 1.124em;
+  font-family: PFAgoraSansPro-Regular;
+  font-weight: 400;
+}
+.bestseller {
+  position: absolute;
+  top: -23px;
+  left: 55px;
+  border-bottom: 24px solid #ffd200;
+  text-align: center;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  width: 160px;
+}
+.bestseller .bestseller__text {
+  position: absolute;
+  left: 30px;
+  top: -2px;
+  text-transform: uppercase;
+  font-family: PFAgoraSansPro-Bold;
+  color: #e11a27;
+  font-weight: 700;
+}
