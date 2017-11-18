@@ -39,6 +39,7 @@
   height: 266px;
   margin: 0 auto;
   border-radius: 100%;
+  margin-bottom: 10px;
 }
 .advantage .advantage__ellipse:first-child {
   background-color: #fff;
