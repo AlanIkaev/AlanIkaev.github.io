@@ -1,0 +1,242 @@
+@import (reference) "../../global-styles/global.less";
+
+.new-collection{
+	padding-top: 100px;
+	padding-bottom: 50px;
+	min-height: 676px;
+	background-color: @lightblue;
+
+	.new-collection__container{
+		  padding-right: 30px;
+		  padding-left: 30px;
+		  margin-right: auto;
+		  margin-left: auto;
+
+		  @media (min-width: 576px){
+		  	max-width: 540px;
+		  }
+
+		  @media (min-width: 768px){
+		  	max-width: 720px;
+		  }
+
+		  @media (min-width: 992px){
+		  	max-width: 960px;
+		  }
+
+		  @media (min-width: 1200px){
+		  	max-width: 1170px;
+		  }
+	}
+
+	.new-collection__title{
+		text-align: center;
+		margin-bottom: 27px;
+		.title;
+	}
+
+	.hr{
+		.hr;
+		margin-bottom: 80px;
+	}
+}
+
+.collection{
+	margin: 0 auto;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+
+	@media (max-width: 768px){
+		width: 235px;
+		height: 372px;
+	}
+
+	@media (min-width: 769px) and (max-width: 1024px){
+		width: 540px;
+		height: 372px;
+	}
+
+	@media (min-width: 1024px) and (max-width: 1399px){
+		width: 830px;
+		height: 372px;
+	}
+
+	// @media (max-width: 425px){
+	// 	width: 235px;
+	// }
+
+	// @media (max-width: 767px){
+	// 	justify-content: center;
+	// 	flex-direction: column;
+	// 	align-items: center;
+	// }
+
+	.collection__item{
+		position: relative;
+		cursor: pointer;
+		width: 255px;
+		height: 322px;
+		padding-top: 8.5px;
+
+		@media (min-width: 769px) and (max-width: 1399px){
+			margin-right: 20px;
+		}
+
+		&:hover{
+
+			.collection__inner{
+				display: block;
+				transition: 0.8s ease;
+			}
+
+			.product-info__name{
+				background-color: @main;
+				transition: 0.3s ease;
+			}
+
+			.product-info__price{
+				background-color: rgba(78, 198, 171, 0.65);
+				transition: 0.3s ease;
+			}
+		}
+
+		@media (max-width: 767px){
+			margin-bottom: 50px;
+
+			&:last-child{
+				margin: 0;
+			}
+		}
+	}
+
+		.one{
+			background-image: url(img/photo-one.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.two{
+			background-image: url(img/photo-two.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.three{
+			background-image: url(img/photo-three.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.four{
+			background-image: url(img/photo-four.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+	.collection__inner{
+		width: 235px;
+		height: 266px;
+		background-color: rgb(0, 0, 0);
+		margin: 0 auto;
+		opacity: 0.6;
+		padding-top: 78px;
+		display: none;
+	}
+
+	.options{
+		max-width: 165px;
+		margin: 0 auto;
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		.options__button{
+			width: 50px;
+			height: 50px;
+			background-color: rgb(0, 0, 0);
+			border: 1px solid @white;
+			margin-bottom: 8px;
+			cursor: pointer;
+
+			&:hover{
+				background-color: @main;
+				border: 1px solid @main;
+				transition: 0.3s ease;
+				opacity: 1;
+			}
+
+			.pe-7s-like,.pe-7s-shuffle,.pe-7s-clock{
+				font-size: 1.875em;
+				color: @white;
+			}
+		}
+
+		.options__button--long{
+			width: 166px;
+			height: 50px;
+			background-color: rgb(0, 0, 0);
+			border: 1px solid @white;
+			cursor: pointer;
+			display: flex;
+			display: -webkit-flex;
+			align-items: center;
+			justify-content: space-around;
+
+			&:hover{
+				background-color: @wet;
+				transition: 0.3s ease;
+			}
+
+			.pe-7s-cart{
+				font-size: 1.875em;
+				color: @white;
+			}
+
+			.option__button-text{
+				font-family: OpenSans-Regular;
+				font-size: 0.875em;
+				color: @white;
+				text-transform: uppercase;
+				font-weight: 400;
+			}
+		}
+	}
+
+	.product-info{
+		cursor: pointer;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		display: -webkit-flex;
+
+		.product-info__name{
+			font-family: Roboto-Black;
+			width: 80%;
+			height: 40px;
+			font-size: 1.125em;
+			color: @white;
+			text-transform: uppercase;
+			padding: 10px 11px;
+			margin: 0;
+			background-color: @wet;
+		}
+
+		.product-info__price{
+			font-family: Roboto-Black;
+			font-size: 1.125em;
+			color: @white;
+			width: 20%;
+			height: 40px;
+			padding: 10px 11px;
+			background-color: rgb(149, 149, 149);
+		}
+	}
+}

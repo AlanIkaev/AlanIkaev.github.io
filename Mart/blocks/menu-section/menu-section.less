@@ -1,0 +1,94 @@
+@import (reference) "../../global-styles/global.less";
+
+.menu-section{
+	padding: 20px 0px;
+	background-color: @white;
+
+	.logo{
+		text-transform: uppercase;
+
+		&:hover{
+
+			.logo__item{
+				color: @main;
+			}
+
+			.logo__item--span{
+				color:@gray;
+			}
+		}
+
+		.logo__item{
+			font-family: Roboto-Light;
+			font-size: 1.875em;
+			font-weight: 300;
+			color: @gray;
+		}
+
+		.logo__item--span{
+			font-family: Roboto-Black;
+			font-size: 1.3em;
+			font-weight: 700;
+			color: @main;
+		}
+	}
+
+	.menu-section__navigation-link{
+		font-family: OpenSans-Bold;
+		font-size: 0.875em;
+		text-transform: uppercase;
+		color: @black;
+		margin-right: 30px;
+
+		@media (min-width: 768px){
+			margin-right: 15px;
+		}
+
+		@media(max-width: 767px){
+			display: none;
+		}
+
+		&:first-child{
+			color:@main;
+		}
+
+		&:last-child{
+			margin: 0;
+		}
+
+		&:hover{
+			color:@main;
+			transition: 0.3s ease;
+		}
+	}
+
+	.menu-section__cart{
+		max-width: 127px;
+		display: flex;
+		display: -webkit-flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.menu-section__search{
+		color: @black;
+
+		&:hover{
+			color: @main;
+		}
+	}
+
+	.menu-section__bag{
+		color: @black;
+
+		&:hover{
+			color: @main;
+		}
+	}
+
+	.menu-section__sum{
+		margin: 0px 10px;
+		font-size: 1.125em;
+		text-transform: uppercase;
+	}
+}

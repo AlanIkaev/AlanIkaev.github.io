@@ -1,0 +1,256 @@
+.featured-products {
+  padding-top: 100px;
+}
+.featured-products .featured-products__container {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .featured-products .featured-products__container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .featured-products .featured-products__container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .featured-products .featured-products__container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .featured-products .featured-products__container {
+    max-width: 1170px;
+  }
+}
+.featured-products .featured-products__title {
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: Roboto-Black;
+  color: #555252;
+  font-weight: 900;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+@media (max-width: 425px) {
+  .featured-products .featured-products__title {
+    font-size: 2.5em;
+  }
+}
+.featured-products .hr {
+  width: 164px;
+  height: 15px;
+  padding-top: 3px;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 2px solid #1abc9c;
+  border-bottom: 2px solid #1abc9c;
+  margin-bottom: 80px;
+}
+.featured-products .hr .hr__inner {
+  width: 100%;
+  height: 5px;
+  background-color: #1abc9c;
+}
+.categories {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 570px;
+  margin-bottom: 105px;
+}
+.categories .categories__list {
+  display: flex;
+  display: webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.categories .categories__item {
+  list-style-type: none;
+}
+.categories .categories__link {
+  text-decoration: none;
+  text-align: center;
+  font-family: Roboto-Regular;
+  border: 1px solid #959595;
+  border-radius: 3px;
+  color: #555252;
+  padding: 7px;
+  text-transform: uppercase;
+}
+.categories .categories__link:hover {
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+  color: #fefefe;
+  transition: 0.3s ease;
+}
+.production {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.production .production__item {
+  cursor: pointer;
+  position: relative;
+  width: 255px;
+  height: 322px;
+  background-color: #e9f0fd;
+  padding-top: 8.5px;
+  margin-bottom: 30px;
+}
+.production .production__item:first-child {
+  background-image: url(img/product1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.production .production__item:nth-child(2) {
+  background-image: url(img/product2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.production .production__item:nth-child(3) {
+  background-image: url(img/product3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.production .production__item:nth-child(4) {
+  background-image: url(img/product4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.production .production__item:nth-child(5) {
+  background-image: url(img/product5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.production .production__item:nth-child(6) {
+  background-image: url(img/product6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.production .production__item:nth-child(7) {
+  background-image: url(img/product7.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.production .production__item:last-child {
+  background-image: url(img/product8.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.production .production__item:hover .production__inner {
+  display: block;
+  transition: 0.8s ease;
+}
+.production .production__item:hover .product-info__name {
+  background-color: #1abc9c;
+  transition: 0.3s ease;
+}
+.production .production__item:hover .product-info__price {
+  background-color: rgba(78, 198, 171, 0.65);
+  transition: 0.3s ease;
+}
+.production .production__inner {
+  width: 235px;
+  height: 266px;
+  background-color: #000000;
+  margin: 0 auto;
+  opacity: 0.6;
+  padding-top: 78px;
+  display: none;
+}
+.production .options {
+  max-width: 165px;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.production .options .options__button {
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+  border: 1px solid #fefefe;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.production .options .options__button:hover {
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+  transition: 0.3s ease;
+  opacity: 1;
+}
+.production .options .options__button .pe-7s-like,
+.production .options .options__button .pe-7s-shuffle,
+.production .options .options__button .pe-7s-clock {
+  font-size: 1.875em;
+  color: #fefefe;
+}
+.production .options .options__button--long {
+  width: 166px;
+  height: 50px;
+  background-color: #000000;
+  border: 1px solid #fefefe;
+  cursor: pointer;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.production .options .options__button--long:hover {
+  background-color: #323232;
+  transition: 0.3s ease;
+}
+.production .options .options__button--long .pe-7s-cart {
+  font-size: 1.875em;
+  color: #fefefe;
+}
+.production .options .options__button--long .option__button-text {
+  font-family: OpenSans-Regular;
+  font-size: 0.875em;
+  color: #fefefe;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.production .product-info {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  display: -webkit-flex;
+}
+.production .product-info .product-info__name {
+  font-family: Roboto-Black;
+  width: 80%;
+  height: 40px;
+  font-size: 1.125em;
+  color: #fefefe;
+  text-transform: uppercase;
+  padding: 10px 11px;
+  margin: 0;
+  background-color: #323232;
+}
+.production .product-info .product-info__price {
+  font-family: Roboto-Black;
+  font-size: 1.125em;
+  color: #fefefe;
+  width: 20%;
+  height: 40px;
+  padding: 10px 11px;
+  background-color: #959595;
+}

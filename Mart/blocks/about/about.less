@@ -1,0 +1,104 @@
+@import (reference) "../../global-styles/global.less";
+
+.about{
+	margin-bottom: 80px;
+	
+	.about__container{
+		width: 100%;
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-right: 30px;
+		padding-left: 30px;
+		margin-right: auto;
+		margin-left: auto;
+
+		  @media (max-width: 767px){
+		  	justify-content: center;
+		  	flex-direction: column;
+		  }
+
+		  @media (min-width: 576px){
+		  	max-width: 540px;
+		  }
+
+		  @media (min-width: 768px){
+		  	max-width: 720px;
+		  }
+
+		  @media (min-width: 992px){
+		  	max-width: 960px;
+		  }
+
+		  @media (min-width: 1200px){
+		  	max-width: 1170px;
+		  }
+	}
+
+	.about__item{
+		max-width: 255px;
+		text-align: center;
+
+		@media (max-width: 767px){
+			margin-bottom: 50px;
+
+			&:last-child{
+				margin: 0;
+			}
+		}
+	}
+
+	.about__icon{
+		margin-bottom: 54px;
+
+		&:hover{
+			color:@main;
+			transition: 0.2s ease;
+		}
+	}
+
+	.about__name{
+		display: block;
+		clear: both;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: OpenSans-Semibold;
+		font-size: 1.125em;
+		font-weight: 600;
+		color: @gray;
+		margin-bottom: 30px;
+
+		&:hover{
+			color:@main;
+			transition: 0.2s ease;
+		}
+	}
+
+	.about__annotation{
+		font-family: OpenSans-Light;
+		font-size: 0.875em;
+		font-weight: 300;
+		color: @gray;
+	}
+
+	.pe-7s-settings{
+		font-size: 4.375em;
+		color: @gray;
+	}
+
+	.pe-7s-safe{
+		font-size: 4.375em;
+		color: @gray;
+	}
+
+	.pe-7s-global{
+		font-size: 4.375em;
+		color: @gray;
+	}
+
+	.pe-7s-compass{
+		font-size: 4.375em;
+		color: @gray;
+	}
+}

@@ -1,0 +1,107 @@
+.menu-section {
+  padding: 20px 0px;
+  background-color: #fefefe;
+}
+.menu-section .menu-section__container {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .menu-section .menu-section__container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .menu-section .menu-section__container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .menu-section .menu-section__container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .menu-section .menu-section__container {
+    max-width: 1170px;
+  }
+}
+.menu-section .logo {
+  text-transform: uppercase;
+}
+.menu-section .logo:hover .logo__item {
+  color: #1abc9c;
+}
+.menu-section .logo:hover .logo__item--span {
+  color: #555252;
+}
+.menu-section .logo .logo__item {
+  font-family: Roboto-Light;
+  font-size: 1.875em;
+  font-weight: 300;
+  color: #555252;
+}
+.menu-section .logo .logo__item--span {
+  font-family: Roboto-Black;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #1abc9c;
+}
+.menu-section .menu-section__navigation-link {
+  font-family: OpenSans-Bold;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #000;
+  margin-right: 30px;
+}
+@media (min-width: 768px) {
+  .menu-section .menu-section__navigation-link {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .menu-section .menu-section__navigation-link {
+    display: none;
+  }
+}
+.menu-section .menu-section__navigation-link:first-child {
+  color: #1abc9c;
+}
+.menu-section .menu-section__navigation-link:last-child {
+  margin: 0;
+}
+.menu-section .menu-section__navigation-link:hover {
+  color: #1abc9c;
+  transition: 0.3s ease;
+}
+.menu-section .menu-section__cart {
+  max-width: 127px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-section .menu-section__search {
+  color: #000;
+}
+.menu-section .menu-section__search:hover {
+  color: #1abc9c;
+}
+.menu-section .menu-section__bag {
+  color: #000;
+}
+.menu-section .menu-section__bag:hover {
+  color: #1abc9c;
+}
+.menu-section .menu-section__sum {
+  margin: 0px 10px;
+  font-size: 1.125em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,113 @@
+.top-header {
+  padding: 20px 0px;
+  background-color: #1abc9c;
+}
+.top-header .top-header__container {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .top-header .top-header__container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .top-header .top-header__container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .top-header .top-header__container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .top-header .top-header__container {
+    max-width: 1170px;
+  }
+}
+.top-header .top-header__contacts {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+.top-header .top-header__info {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-header .top-header__number {
+  margin-right: 30px;
+  color: #fefefe;
+  font-family: OpenSans-Light;
+  font-size: 0.875em;
+}
+@media (max-width: 346px) {
+  .top-header .top-header__number {
+    margin-bottom: 10px;
+  }
+}
+.top-header .top-header__number:hover {
+  transition: 0.5s ease;
+  color: #000;
+}
+.top-header .top-header__email {
+  color: #fefefe;
+  font-family: OpenSans-Light;
+  font-size: 0.875em;
+}
+.top-header .top-header__email:hover {
+  transition: 0.5s ease;
+  color: #000;
+}
+.top-header .top-header__navigation {
+  display: flex;
+  display: -webkit-flex;
+}
+@media (max-width: 1023px) {
+  .top-header .top-header__navigation {
+    display: none;
+  }
+}
+.top-header .top-header__navigation-link {
+  color: #fefefe;
+  font-family: OpenSans-Light;
+  font-size: 0.875em;
+  margin-right: 30px;
+}
+.top-header .top-header__navigation-link:hover {
+  transition: 0.5s ease;
+  color: #000;
+}
+.top-header .top-header__navigation-link:nth-child(4) {
+  margin-right: 40px;
+}
+.top-header .top-header__navigation-link:last-child {
+  margin: 0;
+}
+.top-header .fa {
+  margin-right: 2px;
+}
+.top-header .burger-menu {
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+}
+.top-header .burger-menu .burger-menu__line {
+  width: 100%;
+  background: #fefefe;
+  height: 4px;
+}
+.top-header .burger-menu .burger-menu__line:nth-child(2) {
+  margin: 5px 0px;
+}
+@media (max-width: 1023px) {
+  .top-header .burger-menu {
+    display: block;
+  }
+}
