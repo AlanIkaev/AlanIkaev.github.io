@@ -16,6 +16,10 @@
 	<link rel="stylesheet" href="blocks/about/about.css">
 	<link rel="stylesheet" href="blocks/new-collection/new-collection.css">
 	<link rel="stylesheet" href="blocks/featured-products/featured-products.css">
+	<link rel="stylesheet" href="blocks/discounts/discounts.css">
+	<link rel="stylesheet" href="blocks/best-sellers/best-sellers.css">
+	<link rel="stylesheet" href="blocks/reviews/reviews.css">
+	<link rel="stylesheet" href="blocks/newsletter/newsletter.css">
 </head>
 <body>
 	<header class="top-header">
@@ -218,12 +222,10 @@
 				<div class="hr__inner"></div>
 			</div>
 			<nav class="categories">
-				<ul class="categories__list">
-					<li class="categories__item"><a href="" class="categories__link">All</a></li>
-					<li class="categories__item"><a href="" class="categories__link">Dresses and suits</a></li>
-					<li class="categories__item"><a href="" class="categories__link">Accessories</a></li>
-					<li class="categories__item"><a href="" class="categories__link">Miscellaneous</a></li>
-				</ul>
+				<button class="categories__item">All</button>
+				<button class="categories__item">Dresses and suits</button>
+				<button class="categories__item">Accessories</button>
+				<button class="categories__item">Miscellaneous</button>
 			</nav>
 			<div class="production">
 				<div class="production__item">
@@ -411,6 +413,140 @@
 					</div>	
 				</div>
 			</div>
+		</div>
+	</section>
+	<section class="discounts">
+		<h2 class="discounts__title">End of season sale</h2>
+		<h3 class="discounts__subtitle">Up to 35% off Women's Denim</h3>
+	</section>
+	<section class="best-sellers">
+		<div class="best-sellers__container">
+			<h2 class="best-sellers__title">Best sellers</h2>
+			<div class="hr">
+				<div class="hr__inner"></div>
+			</div>	
+			<div class="collection">
+				<div class="collection__item one">
+					<div class="collection__inner">
+						<div class="options">
+							<button class="options__button">
+								<span  class="pe-7s-like"></span>
+							</button>
+							<button class="options__button">
+								<span  class="pe-7s-shuffle"></span>
+							</button>
+							<button class="options__button">
+								<span  class="pe-7s-clock"></span>
+							</button>
+							<button class="options__button--long">
+								<span  class="pe-7s-cart"></span>
+								<span class="option__button-text">Add to cart</span>
+							</button>
+						</div>
+					</div>
+					<div class="product-info">
+						<a href="#" class="product-info__name">Blue Tshirt</a>
+						<a href="#" class="product-info__price">$26</a>
+					</div>
+				</div>
+				<div class="collection__item two">
+					<div class="collection__inner">
+						<div class="options">
+							<button class="options__button">
+								<span  class="pe-7s-like"></span>
+							</button>
+							<button class="options__button">
+								<span  class="pe-7s-shuffle"></span>
+							</button>
+							<button class="options__button">
+								<span  class="pe-7s-clock"></span>
+							</button>
+							<button class="options__button--long">
+								<span  class="pe-7s-cart"></span>
+								<span class="option__button-text">Add to cart</span>
+							</button>
+						</div>
+					</div>
+					<div class="product-info">
+						<a href="#" class="product-info__name">Woman Shirt</a>
+						<a href="#" class="product-info__price">$31</a>
+					</div>
+				</div>
+				<div class="collection__item three">
+					<div class="collection__inner">
+						<div class="options">
+							<button class="options__button">
+								<span  class="pe-7s-like"></span>
+							</button>
+							<button class="options__button">
+								<span  class="pe-7s-shuffle"></span>
+							</button>
+							<button class="options__button">
+								<span  class="pe-7s-clock"></span>
+							</button>
+							<button class="options__button--long">
+								<span class="pe-7s-cart"></span>
+								<span class="option__button-text">Add to cart</span>
+							</button>
+						</div>
+					</div>
+					<div class="product-info">
+						<a href="#" class="product-info__name">Yellow Tshirt</a>
+						<a href="#" class="product-info__price">$26</a>
+					</div>					
+				</div>
+				<div class="collection__item four">
+					<div class="collection__inner">
+						<div class="options">
+							<button class="options__button">
+								<span  class="pe-7s-like"></span>
+							</button>
+							<button class="options__button">
+								<span  class="pe-7s-shuffle"></span>
+							</button>
+							<button class="options__button">
+								<span  class="pe-7s-clock"></span>
+							</button>
+							<button class="options__button--long">
+								<span  class="pe-7s-cart"></span>
+								<span class="option__button-text">Add to cart</span>
+							</button>
+						</div>
+					</div>
+					<div class="product-info">
+						<a href="#" class="product-info__name">Cool Lingerie</a>
+						<a href="#" class="product-info__price">$26</a>
+					</div>					
+				</div>
+			</div>		
+		</div>
+	</section>
+	<section class="reviews">
+		<div class="reviews__container">
+        	<h2 class="reviews__title">Customer Review</h2>
+			<div class="hr">
+				<div class="hr__inner"></div>
+			</div>
+			<article class="review">
+				<div class="review__photo"></div>
+				<p class="review__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, </p>
+				<p class="review__name">-Olivia-</p>
+				<p class="review__city">Melbour,Aus</p>
+				<div class="review__buttons">
+					<button class="review__btn"></button>
+					<button class="review__btn"></button>
+					<button class="review__btn"></button>
+				</div>
+			</article>
+		</div>		
+	</section>
+	<section class="newsletter">
+		<div class="newsletter__container">
+			<h2 class="newsletter__title">Newsletter</h2>
+			<div class="hr">
+				<div class="hr__inner"></div>
+			</div>
+			<p class="newsletter__text">Follow a collection of news & promotions</p>		
 		</div>
 	</section>
 <script

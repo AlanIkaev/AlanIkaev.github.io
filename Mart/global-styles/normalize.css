@@ -27,13 +27,10 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 
-body,h2{
+body,h2,h3,p{
   margin: 0;
 }
 
-p{
-  margin-bottom: 1em;
-}
 
 /**
  * Add the correct display in IE 9-.

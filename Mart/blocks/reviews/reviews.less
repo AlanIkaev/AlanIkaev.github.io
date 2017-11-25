@@ -1,0 +1,131 @@
+@import (reference) "../../global-styles/global.less";
+
+.reviews{
+	padding-top: 100px;
+
+	.reviews__container{
+		  padding-right: 30px;
+		  padding-left: 30px;
+		  margin-right: auto;
+		  margin-left: auto;
+
+		  @media (min-width: 576px){
+		  	max-width: 540px;
+		  }
+
+		  @media (min-width: 768px){
+		  	max-width: 720px;
+		  }
+
+		  @media (min-width: 992px){
+		  	max-width: 960px;
+		  }
+
+		  @media (min-width: 1200px){
+		  	max-width: 1170px;
+		  }
+	}
+
+	.reviews__title{
+		text-align: center;
+		margin-bottom: 27px;
+		.title;
+	}
+
+	.hr{
+		.hr;
+		margin-bottom: 80px;
+	}
+}
+
+.review{
+	text-align: center;
+	max-width: 806px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.review__photo{
+		width: 222px;
+		height: 222px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 35px;
+		background-image: url(img/photo.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.review__text{
+		font-family: OpenSans-Light;
+		font-size: 0.875em;
+		color: @gray;
+		font-weight: 300;
+		line-height: 1.7;
+		margin-bottom: 30px;
+	}
+
+	.review__name{
+		font-family: OpenSans-Bold;
+		font-size: 1.125em;
+		font-weight: 700;
+		color:@main;
+	}
+
+	.review__city{
+		font-family: OpenSans-Light;
+		font-size: 0.875em;
+		color:@gray;
+		font-weight: 300;
+		margin-bottom: 30px;
+	}
+
+	.review__buttons{
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 287px;
+		display: -webkit-flex;
+		justify-content: space-between;
+		margin-bottom: 80px;
+	}
+
+	.review__btn{
+		width: 78px;
+		height: 78px;
+		border-radius: 100%;
+		border: 4px solid @black;
+		background: none;
+		cursor: pointer;
+
+		&:first-child{
+			background-image: url(img/photo-one.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		&:nth-child(2){
+			background-image: url(img/photo-two.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		&:last-child{
+			background-image: url(img/photo-three.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		&:hover{
+			border-color: @main;
+			transition: 0.3s ease;
+		}
+
+		&:focus{
+			border-color: @main;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+@import (reference) "../../global-styles/global.less";
+
+.best-sellers{
+	padding-top: 100px;
+	padding-bottom: 50px;
+	background-color: @lightblue;
+	min-height: 676px;
+
+	.best-sellers__container{
+		  padding-right: 30px;
+		  padding-left: 30px;
+		  margin-right: auto;
+		  margin-left: auto;
+
+		  @media (min-width: 576px){
+		  	max-width: 540px;
+		  }
+
+		  @media (min-width: 768px){
+		  	max-width: 720px;
+		  }
+
+		  @media (min-width: 992px){
+		  	max-width: 960px;
+		  }
+
+		  @media (min-width: 1200px){
+		  	max-width: 1170px;
+		  }
+	}
+
+	.best-sellers__title{
+		.title;
+		text-align: center;
+		margin-bottom: 27px;
+	}
+
+	.hr{
+		.hr;
+		margin-bottom: 80px;
+	}
+}
