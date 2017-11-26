@@ -75,7 +75,7 @@
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
-  padding: 0.9em 1.8em;
+  padding: 15px 30px;
 }
 .slider .btn:hover {
   background-color: #1abc9c;

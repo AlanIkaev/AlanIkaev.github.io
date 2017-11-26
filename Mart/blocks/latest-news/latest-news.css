@@ -1,0 +1,117 @@
+.latest-news {
+  padding-top: 100px;
+}
+.latest-news .latest-news__container {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .latest-news .latest-news__container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .latest-news .latest-news__container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .latest-news .latest-news__container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .latest-news .latest-news__container {
+    max-width: 1170px;
+  }
+}
+.latest-news .latest-news__title {
+  font-family: Roboto-Black;
+  color: #555252;
+  font-weight: 900;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 27px;
+}
+@media (max-width: 425px) {
+  .latest-news .latest-news__title {
+    font-size: 2.5em;
+  }
+}
+.latest-news .hr {
+  width: 164px;
+  height: 15px;
+  padding-top: 3px;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 2px solid #1abc9c;
+  border-bottom: 2px solid #1abc9c;
+  margin-bottom: 80px;
+}
+.latest-news .hr .hr__inner {
+  width: 100%;
+  height: 5px;
+  background-color: #1abc9c;
+}
+.news {
+  max-width: 1150px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .news {
+    justify-content: center;
+  }
+}
+.news .news__item {
+  max-width: 350px;
+  margin-bottom: 50px;
+}
+.news .news__img {
+  width: 100%;
+  max-height: 260px;
+  margin-bottom: 15px;
+}
+.news .news__title {
+  position: relative;
+  font-family: OpenSans-Semibold;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #555252;
+  margin-bottom: 15px;
+}
+.news .news__hr {
+  width: 137px;
+  height: 3px;
+  background-color: #1abc9c;
+  margin-bottom: 30px;
+}
+.news .news__text {
+  font-family: OpenSans-Regular;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #555252;
+  line-height: 1.857;
+  margin-bottom: 20px;
+}
+.news .btn {
+  font-family: OpenSans-Light;
+  font-size: 0.994em;
+  font-weight: 300;
+  color: #555252;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #1abc9c;
+  padding: 10px 20px;
+}
+.news .btn:hover {
+  background-color: #1abc9c;
+  color: #fefefe;
+  transition: 0.3s ease;
+}

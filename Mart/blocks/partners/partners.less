@@ -1,0 +1,93 @@
+@import (reference) "../../global-styles/global.less";
+
+.partners{
+	padding-top: 100px;
+	min-height: 484px;
+	background-color: @lightblue;
+
+	.partners__container{
+		  padding-right: 30px;
+		  padding-left: 30px;
+		  margin-right: auto;
+		  margin-left: auto;
+
+		  @media (min-width: 576px){
+		  	max-width: 540px;
+		  }
+
+		  @media (min-width: 768px){
+		  	max-width: 720px;
+		  }
+
+		  @media (min-width: 992px){
+		  	max-width: 960px;
+		  }
+
+		  @media (min-width: 1200px){
+		  	max-width: 1170px;
+		  }
+	}
+
+	.partners__title{
+		.title;
+		text-align: center;
+		margin-bottom: 27px;
+	}
+
+	.hr{
+		.hr;
+		margin-bottom: 80px;
+	}
+
+	.partners__block{
+		max-width: 1150px;
+		margin-right: auto;
+		margin-left: auto;
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-between;
+
+		@media (max-width: 768px){
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+
+	.partners__item{
+		width: 255px;
+		height: 149px;
+		border:1px solid @main;
+
+		@media (max-width:768px){
+			margin-bottom: 30px;
+		}
+
+		&:first-child{
+			background-image: url(img/client_01.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		&:nth-child(2){
+			background-image: url(img/client_02.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		&:nth-child(3){
+			background-image: url(img/client_03.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		&:last-child{
+			background-image: url(img/client_04.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+}
