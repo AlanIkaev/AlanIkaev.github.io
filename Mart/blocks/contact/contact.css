@@ -181,6 +181,10 @@
   color: #fefefe;
   margin: 5px 8px;
 }
+.social-net .fa-codepen {
+  color: #fefefe;
+  margin: 6px 7px;
+}
 .social-net .fa-github {
   color: #fefefe;
   margin: 6px 8px;
@@ -191,8 +195,6 @@
   max-width: 540px;
   max-height: 360px;
   margin-bottom: 50px;
-  /* Firefox 19+ */
-  /* Firefox 18- */
 }
 .feedback .feedback__form {
   display: flex;
@@ -208,6 +210,7 @@
   border: 1px solid #fefefe;
   margin-bottom: 30px;
   padding-left: 20px;
+  outline-color: #1abc9c;
 }
 @media (max-width: 768px) {
   .feedback .feedback__item {
@@ -219,16 +222,60 @@
     height: 50px;
   }
 }
-.feedback ::-webkit-input-placeholder {
+.feedback .feedback__item::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
   color: #fefefe;
 }
-.feedback ::-moz-placeholder {
+.feedback .feedback__item:focus::-webkit-input-placeholder {
+  color: #1abc9c;
+}
+.feedback .feedback__item::-moz-placeholder {
+  /* Firefox 19+ */
   color: #fefefe;
 }
-.feedback :-moz-placeholder {
+.feedback .feedback__item:focus::-moz-placeholder {
+  color: #1abc9c;
+}
+.feedback .feedback__item:-ms-input-placeholder {
+  /* IE 10+ */
   color: #fefefe;
 }
-.feedback :-ms-input-placeholder {
+.feedback .feedback__item:focus:-ms-input-placeholder {
+  color: #fefefe;
+}
+.feedback .feedback__item:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fefefe;
+}
+.feedback .feedback__item:focus:-moz-placeholder {
+  color: #fefefe;
+}
+.feedback .feedback__item-message::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fefefe;
+}
+.feedback .feedback__item-message:focus::-webkit-input-placeholder {
+  color: #1abc9c;
+}
+.feedback .feedback__item-message::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fefefe;
+}
+.feedback .feedback__item-message:focus::-moz-placeholder {
+  color: #1abc9c;
+}
+.feedback .feedback__item-message:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fefefe;
+}
+.feedback .feedback__item-message:focus:-ms-input-placeholder {
+  color: #fefefe;
+}
+.feedback .feedback__item-message:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fefefe;
+}
+.feedback .feedback__item-message:focus:-moz-placeholder {
   color: #fefefe;
 }
 .feedback .feedback__item-message {
@@ -238,10 +285,16 @@
   margin-bottom: 30px;
   padding-top: 15px;
   padding-left: 20px;
+  outline-color: #1abc9c;
 }
 @media (min-width: 768px) {
   .feedback .feedback__item-message {
     height: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .feedback .feedback__item-message {
+    width: 260px;
   }
 }
 .feedback .feedback__item-btn {

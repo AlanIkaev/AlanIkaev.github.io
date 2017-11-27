@@ -74,7 +74,7 @@
 	}
 
 	.slider__subtitle--span{
-		font-family: OpenSans-Semibold;
+		font-family: OpenSans-SemiBold;
 		color: @main;
 		font-weight: 600;
 	}
@@ -87,9 +87,34 @@
 .slider-button{
   width: 104px;
   height: 104px;
-  position: relative;
+  position: absolute;
+  z-index: 1;
   cursor: pointer;
   background-color: #1abc9c;
+
+  &.right{
+  	top: 45%;
+    left: auto;
+    right: -1px;
+
+    @media (max-width: 1023px){
+    	top: auto;
+    	bottom: 50px;
+    }
+
+  }
+
+  &.left{
+  	top: 45%;
+  	right: auto;
+  	left: -1px;
+
+    @media (max-width: 1023px){
+    	top: auto;
+    	bottom: 50px;
+    }
+
+  }
 }
 
 .slider-button:hover{

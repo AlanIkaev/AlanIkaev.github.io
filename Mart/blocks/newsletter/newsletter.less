@@ -58,5 +58,56 @@
 		color: @white;
 		font-weight: 300;
 		text-align: center;
+		margin-bottom: 45px;
+	}
+
+	.newsletter__form{
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 1;
+		max-width: 534px;
+		display: flex;
+		display: -webkit-flex;
+		justify-content: center;
+		border: 2px solid @white;
+		border-radius: 2px;
+
+		@media (max-width: 425px){
+			max-width: 300px; 
+		}
+
+		@media (min-width: 425px) and (max-width: 768px) {
+			max-width: 410px;
+		}
+	}
+
+	.newsletter__email{
+		width: 448px;
+		height: 60px;
+		padding-left: 30px;
+		color: @gray;
+		border: none;
+
+		@media (max-width: 424px){
+			width: 240px;
+		}
+
+		@media (min-width: 425px) and (max-width: 768px){
+			width: 320px;
+		}
+	}
+	
+	.pe-7s-next{
+		font-size: 3.125em;
+		color: @white;
+	}
+
+	.newsletter__button{
+		width: 90px;
+		height: 60px;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
 	}
 }

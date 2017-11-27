@@ -73,9 +73,15 @@
   }
 }
 .partners .partners__item {
+  display: block;
   width: 255px;
   height: 149px;
   border: 1px solid #1abc9c;
+}
+.partners .partners__item:hover {
+  -webkit-box-shadow: 0px 2px 49px 0px #1abc9c;
+  -moz-box-shadow: 0px 2px 49px 0px #1abc9c;
+  box-shadow: 0px 2px 49px 0px #1abc9c;
 }
 @media (max-width: 768px) {
   .partners .partners__item {
