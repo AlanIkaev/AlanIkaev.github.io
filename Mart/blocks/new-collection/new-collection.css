@@ -149,6 +149,8 @@
   display: none;
 }
 .collection .options {
+  position: relative;
+  z-index: 1;
   max-width: 165px;
   margin: 0 auto;
   display: flex;
@@ -165,10 +167,11 @@
   cursor: pointer;
 }
 .collection .options .options__button:hover {
+  position: relative;
+  z-index: 1;
   background-color: #1abc9c;
   border: 1px solid #1abc9c;
   transition: 0.3s ease;
-  opacity: 1;
 }
 .collection .options .options__button .pe-7s-like,
 .collection .options .options__button .pe-7s-shuffle,

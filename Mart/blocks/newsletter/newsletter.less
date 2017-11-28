@@ -88,6 +88,7 @@
 		padding-left: 30px;
 		color: @gray;
 		border: none;
+		outline-color: @main;
 
 		@media (max-width: 424px){
 			width: 240px;
@@ -109,5 +110,13 @@
 		background-color: transparent;
 		border: none;
 		cursor: pointer;
+
+		&:hover{
+
+			.pe-7s-next{
+				color: @gray;
+				transition: 0.3s ease;
+			}
+		}
 	}
 }

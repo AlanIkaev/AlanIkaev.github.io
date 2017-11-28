@@ -2,10 +2,16 @@
   "name": "mart",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "./node_modules/.bin/gulp4"
   },
   "author": "Alan Ikaev <ikaeffalan3@gmail.com> (github.com/alanikaev)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.2",
+    "gulp4": "^4.0.2"
+  }
 }

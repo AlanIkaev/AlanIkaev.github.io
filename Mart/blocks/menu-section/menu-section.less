@@ -4,6 +4,33 @@
 	padding: 20px 0px;
 	background-color: @white;
 
+	.menu-section__container{
+		  padding-right: 30px;
+		  padding-left: 30px;
+		  margin-right: auto;
+		  margin-left: auto;
+		  display: flex;
+		  display: -webkit-flex;
+		  justify-content: space-between;
+		  align-items: center;
+
+		  @media (min-width: 576px){
+		  	max-width: 540px;
+		  }
+
+		  @media (min-width: 768px){
+		  	max-width: 720px;
+		  }
+
+		  @media (min-width: 992px){
+		  	max-width: 960px;
+		  }
+
+		  @media (min-width: 1200px){
+		  	max-width: 1170px;
+		  }
+	}
+
 	.logo{
 		text-transform: uppercase;
 
@@ -78,8 +105,9 @@
 		}
 	}
 
-	.menu-section__bag{
+	.pe-7s-shopbag{
 		color: @black;
+		font-size: 2em;
 
 		&:hover{
 			color: @main;

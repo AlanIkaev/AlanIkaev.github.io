@@ -100,6 +100,7 @@
   padding-left: 30px;
   color: #555252;
   border: none;
+  outline-color: #1abc9c;
 }
 @media (max-width: 424px) {
   .newsletter .newsletter__email {
@@ -121,4 +122,8 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+.newsletter .newsletter__button:hover .pe-7s-next {
+  color: #555252;
+  transition: 0.3s ease;
 }

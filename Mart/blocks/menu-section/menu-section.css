@@ -3,15 +3,14 @@
   background-color: #fefefe;
 }
 .menu-section .menu-section__container {
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: space-between;
-  align-items: center;
   padding-right: 30px;
   padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (min-width: 576px) {
   .menu-section .menu-section__container {
@@ -94,10 +93,11 @@
 .menu-section .menu-section__search:hover {
   color: #1abc9c;
 }
-.menu-section .menu-section__bag {
+.menu-section .pe-7s-shopbag {
   color: #000;
+  font-size: 2em;
 }
-.menu-section .menu-section__bag:hover {
+.menu-section .pe-7s-shopbag:hover {
   color: #1abc9c;
 }
 .menu-section .menu-section__sum {

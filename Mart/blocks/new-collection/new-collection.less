@@ -62,16 +62,6 @@
 		height: 372px;
 	}
 
-	// @media (max-width: 425px){
-	// 	width: 235px;
-	// }
-
-	// @media (max-width: 767px){
-	// 	justify-content: center;
-	// 	flex-direction: column;
-	// 	align-items: center;
-	// }
-
 	.collection__item{
 		position: relative;
 		cursor: pointer;
@@ -149,6 +139,8 @@
 	}
 
 	.options{
+		position: relative;
+		z-index: 1;
 		max-width: 165px;
 		margin: 0 auto;
 		display: flex;
@@ -165,10 +157,11 @@
 			cursor: pointer;
 
 			&:hover{
+				position: relative;
+				z-index: 1;
 				background-color: @main;
 				border: 1px solid @main;
 				transition: 0.3s ease;
-				opacity: 1;
 			}
 
 			.pe-7s-like,.pe-7s-shuffle,.pe-7s-clock{
