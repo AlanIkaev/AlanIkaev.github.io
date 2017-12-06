@@ -9,6 +9,7 @@
   width: 100%;
   min-height: 260px;
 }
+/* Стили для банковских карт */
 .card__item {
   position: absolute;
   width: 65%;
@@ -43,6 +44,7 @@
     max-width: 350px;
   }
 }
+/* /Стили для банковских карт */
 .card__backline {
   position: absolute;
   top: 2em;
@@ -237,6 +239,7 @@
   background: -o-linear-gradient(top, #83b200, #a2c500);
   background: linear-gradient(to bottom, #83b200, #a2c500);
 }
+/* Стили для подсказки */
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #bec6cf;
@@ -261,6 +264,7 @@
   font-family: ArialRegular;
   font-weight: 400;
 }
+/* Стили сообщения об ошибке */
 .error-message {
   display: block;
   margin-top: 7px;
