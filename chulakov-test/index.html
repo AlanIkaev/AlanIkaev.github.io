@@ -79,16 +79,16 @@
 					</div>
 				<!-- card -->
 					<div class="card">
-						<form action="" class="card__form">
+						<form action="" class="card__form" name="card__form">
 							<h2 class="card__title">Данные банковской карты</h2>
 							<div class="card__content">
 								<div class="card__item card__item--front">
 									<div class="card__item-col">
 										<label for="card__number" class="card__item-label">Номер карты</label>
-										<input type="number" name="card__number" placeholder="0000" class="card__item-input" required="Заполните это поле">
-										<input type="number" name="card__number" placeholder="0000" class="card__item-input" required="Заполните это поле">
-										<input type="number" name="card__number" placeholder="0000" class="card__item-input" required="Заполните это поле">
-										<input type="number" name="card__number" placeholder="0000" class="card__item-input" required="Заполните это поле">
+										<input type="number" name="card__number" placeholder="0000" class="card__number-input">
+										<input type="number" name="card__number" placeholder="0000" class="card__number-input">
+										<input type="number" name="card__number" placeholder="0000" class="card__number-input">
+										<input type="number" name="card__number" placeholder="0000" class="card__number-input">	
 									</div>
 
 									<div class="card__item-col">
@@ -120,19 +120,19 @@
 										</div>
 									</div>
 									<div class="card__item-col">
-										<input type="text" placeholder="Держатель карты" class="card__input-user" required="Заполните это поле">
+										<input name="card__user" type="text" placeholder="Держатель карты" class="card__user-input">
 									</div>
 								</div>
 								<div class="card__item card__item--back">
 									<div class="card__backline"></div>
 									<div class="card__item-cvv-wrapper">
 										<label for="cvv" class="card__item-label card__item-label--cvv">Код CVV2/CVC2</label>
-										<input name="cvv" type="text" class="card__input-cvv"  placeholder="000" required="Заполните это поле">
+										<input name="cvv" type="text" class="card__cvv-input"  placeholder="000">
 										<a href="" class="card__cvv-hint" title="3 цифры на обратной стороне карты"></a>
 									</div>
 								</div>
 							</div>
-							<input type="submit" value="Оплатить" class="card__submit">
+							<button type="submit" class="card__submit" onclick="event.preventDefault();return validate()">Оплатить</button> <!-- Так как не используем Ajax, приходится event.preventDefault() -->
 						</form>
 					</div>
 				<!-- /card -->

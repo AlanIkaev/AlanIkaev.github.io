@@ -10,6 +10,11 @@
   font-family: OpenSans-Bold;
   margin-bottom: 10px;
 }
+@media (max-width: 424px) {
+  .header .header__title {
+    font-size: 1.6em;
+  }
+}
 .header .header__p {
   font-family: ArialRegular;
   font-size: 14px;
