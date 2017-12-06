@@ -1,0 +1,17 @@
+.header {
+  padding: 50px 0px 35px 29px;
+  background-color: #00aeef;
+}
+.header .header__text {
+  max-width: 453px;
+}
+.header .header__title {
+  color: #193945;
+  font-family: OpenSans-Bold;
+  margin-bottom: 10px;
+}
+.header .header__p {
+  font-family: ArialRegular;
+  font-size: 14px;
+  color: #193945;
+}

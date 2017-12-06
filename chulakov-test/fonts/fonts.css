@@ -1,0 +1,11 @@
+@font-face{
+	font-family: OpenSans-Bold;
+	src: url(./OpenSans-Bold.ttf);
+	src: url(./OpenSans-Bold.woff);
+	src: url(./OpenSans-Bold.woff2)
+}
+
+@font-face{
+	font-family: ArialRegular;
+	src: url(./ArialRegular.woff);
+}

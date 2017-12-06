@@ -1,0 +1,39 @@
+.payment {
+  background-color: #fff;
+}
+.payment .payment__info {
+  max-width: 300px;
+}
+.payment .payment__container {
+  min-height: 570px;
+  max-width: 584px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 46px 15px 50px 15px;
+}
+.payment .payment__text {
+  font-family: ArialRegular;
+  font-size: 16px;
+  color: #8494ab;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 23px;
+}
+.payment .payment__text--number {
+  padding-bottom: 10px;
+}
+.payment .payment__number {
+  padding-bottom: 10px;
+}
+.payment .payment__number,
+.payment .payment__sum {
+  padding: 0;
+  color: #373c43;
+  font-family: ArialRegular;
+  font-size: 16px;
+  font-weight: 400;
+}
+.payment .payment__info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
