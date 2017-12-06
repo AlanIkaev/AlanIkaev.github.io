@@ -456,3 +456,15 @@ template {
 [hidden] {
   display: none;
 }
+
+body{
+  background-color: black;
+}
+
+li{
+  list-style-type: none;
+}
+
+select::-ms-expand {
+    display: none;
+}

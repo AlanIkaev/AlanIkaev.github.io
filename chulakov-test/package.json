@@ -1,0 +1,19 @@
+{
+  "name": "chulakov-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Ikaev <ikaeffalan3@gmail.com> (github.com/alanikaev)",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.2",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp4": "^4.0.2"
+  }
+}
