@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="global-css/normalize.css">
 	<link rel="stylesheet" href="./fonts/fonts.css">
-	<link rel="stylesheet" href="public/all.min.css">f
+	<link rel="stylesheet" href="./public/all.min.css">
 </head>
 <body>
 <!-- wrapper -->
@@ -73,7 +73,7 @@
 					</div>
 				<!-- card -->
 					<div class="card">
-						<form action="" class="card__form" name="card__form">
+						<form action="" class="card__form" name="card__form" onsubmit="event.preventDefault(); return validate()">
 							<h2 class="card__title">Данные банковской карты</h2>
 							<div class="card__content">
 								<div class="card__item card__item--front">
@@ -126,7 +126,7 @@
 									</div>
 								</div>
 							</div>
-							<button type="submit" class="card__submit" onclick="event.preventDefault();return validate()">Оплатить</button> <!-- Так как не используем Ajax, приходится event.preventDefault() -->
+							<button type="submit" class="card__submit">Оплатить</button> 
 						</form>
 					</div>
 				<!-- /card -->

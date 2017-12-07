@@ -12,10 +12,9 @@ burger.onclick = function(){
 function validate(){
 
 	var form = document.forms.card__form.elements;
-	var cardNumber = form.card__number;
+	var cardNumber = document.getElementsByClassName("card__number-input");
 	var cardCvv = form.cvv;
 	var cardUser = form.card__user;
-	var cardNumberValid = 0;
 
 	var cardNumberRegExp = /^[0-9]{4}$/;
 	var cardUserRegExp = /[A-Za-z]{4,}/;
@@ -55,15 +54,14 @@ function validate(){
 		Error(cardCvv.parentNode, "3 цифры");
 	}
 
-  for (var i = 0; i <= cardNumber.length; i++) {
+	for (var i = 0; i <= cardNumber.length; i++){
 
-    if (cardNumberRegExp.test(cardNumber[i]).value == true) {
-      cardNumber[i].style.border="1px solid green";
-    } 
+		if (cardNumberRegExp.test(cardNumber[i].value) == true){
+			cardNumber[i].style.border = "1px solid green";
+		}
 
-    else {
-      cardNumber[i].style.border="1px solid red";
-    }
-  }
-  
+		else{
+			cardNumber[i].style.border = "1px solid red";
+		}
+	}
 }
