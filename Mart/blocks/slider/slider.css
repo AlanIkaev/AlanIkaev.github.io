@@ -4,7 +4,7 @@
 }
 .slider .slider__item {
   width: 100%;
-  min-height: 600px;
+  height: 600px;
   background-image: url(img/bg-img.png);
   background-size: cover;
   background-position: center;
@@ -29,7 +29,7 @@
 .slider .slider__jumbotron {
   text-align: center;
   position: relative;
-  padding: 10em 1em;
+  padding-top: 212px;
   z-index: 1;
   color: #fefefe;
   font-size: 2em;
@@ -68,14 +68,17 @@
 .slider .btn {
   display: inline-block;
   font-family: Roboto-Regular;
-  font-size: 0.6em;
+  font-size: 14px;
+  font-weight: 400;
   color: #fefefe;
   text-transform: uppercase;
   border: 2px solid #1abc9c;
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
-  padding: 15px 35px;
+  width: 120px;
+  height: 42px;
+  line-height: 38px;
 }
 .slider .btn:hover {
   background-color: #1abc9c;

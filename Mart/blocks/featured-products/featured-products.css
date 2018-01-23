@@ -106,7 +106,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .production {
     justify-content: center;
   }
@@ -183,13 +183,13 @@
 .production .production__inner {
   width: 235px;
   height: 266px;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.5);
   margin: 0 auto;
-  opacity: 0.6;
   padding-top: 78px;
   display: none;
 }
 .production .options {
+  position: relative;
   max-width: 165px;
   margin: 0 auto;
   display: flex;
@@ -200,7 +200,7 @@
 .production .options .options__button {
   width: 50px;
   height: 50px;
-  background-color: #000000;
+  background-color: transparent;
   border: 1px solid #fefefe;
   margin-bottom: 8px;
   cursor: pointer;
@@ -209,7 +209,6 @@
   background-color: #1abc9c;
   border: 1px solid #1abc9c;
   transition: 0.3s ease;
-  opacity: 1;
 }
 .production .options .options__button .pe-7s-like,
 .production .options .options__button .pe-7s-shuffle,
@@ -220,7 +219,7 @@
 .production .options .options__button--long {
   width: 166px;
   height: 50px;
-  background-color: #000000;
+  background-color: #323232;
   border: 1px solid #fefefe;
   cursor: pointer;
   display: flex;
@@ -229,8 +228,9 @@
   justify-content: space-around;
 }
 .production .options .options__button--long:hover {
-  background-color: #323232;
+  background-color: #1abc9c;
   transition: 0.3s ease;
+  border-color: #1abc9c;
 }
 .production .options .options__button--long .pe-7s-cart {
   font-size: 1.875em;

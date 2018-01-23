@@ -8,8 +8,31 @@
 	background-size: cover;
 	background-position: center;
 
-	@media (max-width: 768px){
-		padding: 80px;
+	@media (max-width: 767px){
+		padding-top: 30px;
+	}
+
+	.contact__container{
+		  padding-right: 30px;
+		  padding-left: 30px;
+		  margin-right: auto;
+		  margin-left: auto;
+
+		  @media (min-width: 576px){
+		  	max-width: 540px;
+		  }
+
+		  @media (min-width: 768px){
+		  	max-width: 720px;
+		  }
+
+		  @media (min-width: 992px){
+		  	max-width: 960px;
+		  }
+
+		  @media (min-width: 1200px){
+		  	max-width: 1170px;
+		  }
 	}
 
 	&:before{
@@ -27,8 +50,6 @@
 	}
 
 	.contact__inner{
-		  padding-right: 30px;
-		  padding-left: 30px;
 		  margin-right: auto;
 		  margin-left: auto;
 		  display: flex;
@@ -38,22 +59,6 @@
 
 		  @media (max-width: 1199px){
 		  	justify-content: center;
-		  }
-
-		  @media (min-width: 576px){
-		  	max-width: 540px;
-		  }
-
-		  @media (min-width: 768px){
-		  	max-width: 720px;
-		  }
-
-		  @media (min-width: 992px){
-		  	max-width: 960px;
-		  }
-
-		  @media (min-width: 1200px){
-		  	max-width: 1170px;
 		  }
 	}
 
@@ -94,6 +99,10 @@
 		font-weight: 300;
 		color: @white;
 		margin-bottom: 30px;
+
+		@media (max-width: 1199px){
+			text-align: center;
+		}
 	}
 
 	.information__subtitle--span{
@@ -143,6 +152,11 @@
 	justify-content: space-between;
 	margin-bottom: 50px;
 
+	@media (max-width: 767px){
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 	.social-net__link{
 		width: 30px;
 		height: 30px;
@@ -191,7 +205,6 @@
 	position: relative;
 	z-index: 1;
 	max-width: 540px;
-	max-height: 360px;
 	margin-bottom: 50px;
 
 	.feedback__form{
@@ -199,26 +212,21 @@
 		display: -webkit-flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+
+		@media (max-width: 767px){
+			justify-content: center;
+		}
 	}
 
 	.feedback__item{
 		width: 260px;
-		height: auto;
+		height: 48px;
 		background-color: transparent;
 		color:@white;
 		border: 1px solid @white;
 		margin-bottom: 30px;
 		padding-left: 20px;
 		outline-color: @main;
-			
-
-		@media (max-width: 768px){
-			height: 30px;
-		}
-
-		@media (min-width: 1199px){
-			height: 50px;
-		}
 	}
 
 		.feedback__item::-webkit-input-placeholder { /* Chrome/Opera/Safari */

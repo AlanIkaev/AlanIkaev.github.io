@@ -131,16 +131,14 @@
 	.collection__inner{
 		width: 235px;
 		height: 266px;
-		background-color: rgb(0, 0, 0);
+		background-color: rgba(0,0,0,.5);
 		margin: 0 auto;
-		opacity: 0.6;
 		padding-top: 78px;
 		display: none;
 	}
 
 	.options{
 		position: relative;
-		z-index: 1;
 		max-width: 165px;
 		margin: 0 auto;
 		display: flex;
@@ -151,14 +149,12 @@
 		.options__button{
 			width: 50px;
 			height: 50px;
-			background-color: rgb(0, 0, 0);
+			background-color: transparent;
 			border: 1px solid @white;
 			margin-bottom: 8px;
 			cursor: pointer;
 
 			&:hover{
-				position: relative;
-				z-index: 1;
 				background-color: @main;
 				border: 1px solid @main;
 				transition: 0.3s ease;
@@ -173,7 +169,7 @@
 		.options__button--long{
 			width: 166px;
 			height: 50px;
-			background-color: rgb(0, 0, 0);
+			background-color: @wet;
 			border: 1px solid @white;
 			cursor: pointer;
 			display: flex;
@@ -182,8 +178,9 @@
 			justify-content: space-around;
 
 			&:hover{
-				background-color: @wet;
+				background-color: @main;
 				transition: 0.3s ease;
+				border-color:@main;
 			}
 
 			.pe-7s-cart{

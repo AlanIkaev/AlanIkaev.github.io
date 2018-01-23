@@ -2,8 +2,8 @@
 
 .discounts{
 	position: relative;
-	padding: 170px 0px;
-	min-height: 400px;
+	padding-top: 170px;
+	height: 400px;
 	background-image: url(img/discounts-bg.jpg);
 	background-size: cover;
 	background-position: center;
@@ -32,6 +32,10 @@
 		color: @white;
 		text-transform: uppercase;
 		line-height: 1.5;
+
+		@media (max-width: 767px){
+			font-size: 2.3em;
+		}
 	}
 
 	.discounts__subtitle{
@@ -41,5 +45,9 @@
 		font-size: 2.25em;
 		font-weight: 300;
 		color: @white;
+
+		@media (max-width: 767px){
+			font-size: 1.5em;
+		}
 	}
 }

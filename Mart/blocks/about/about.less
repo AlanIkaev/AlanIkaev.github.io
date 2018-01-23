@@ -37,7 +37,7 @@
 	}
 
 	.about__item{
-		max-width: 255px;
+		flex-basis: 249px;
 		text-align: center;
 
 		@media (max-width: 767px){
@@ -49,13 +49,21 @@
 		}
 	}
 
-	.about__icon{
-		margin-bottom: 54px;
+	.about__item-wrapper{
 
 		&:hover{
-			color:@main;
-			transition: 0.2s ease;
+
+			cursor: pointer;
+			
+			.about__icon,.about__name{
+				color:@main;
+				transition: 0.2s ease;
+			}
 		}
+	}
+
+	.about__icon{
+		margin-bottom: 54px;
 	}
 
 	.about__name{
@@ -68,11 +76,6 @@
 		font-weight: 600;
 		color: @gray;
 		margin-bottom: 30px;
-
-		&:hover{
-			color:@main;
-			transition: 0.2s ease;
-		}
 	}
 
 	.about__annotation{

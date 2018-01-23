@@ -39,7 +39,7 @@
   }
 }
 .about .about__item {
-  max-width: 255px;
+  flex-basis: 249px;
   text-align: center;
 }
 @media (max-width: 767px) {
@@ -50,12 +50,16 @@
     margin: 0;
   }
 }
-.about .about__icon {
-  margin-bottom: 54px;
+.about .about__item-wrapper:hover {
+  cursor: pointer;
 }
-.about .about__icon:hover {
+.about .about__item-wrapper:hover .about__icon,
+.about .about__item-wrapper:hover .about__name {
   color: #1abc9c;
   transition: 0.2s ease;
+}
+.about .about__icon {
+  margin-bottom: 54px;
 }
 .about .about__name {
   display: block;
@@ -67,10 +71,6 @@
   font-weight: 600;
   color: #555252;
   margin-bottom: 30px;
-}
-.about .about__name:hover {
-  color: #1abc9c;
-  transition: 0.2s ease;
 }
 .about .about__annotation {
   font-family: OpenSans-Light;
