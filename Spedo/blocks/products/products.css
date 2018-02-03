@@ -1,0 +1,12 @@
+.products {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.products .products__item {
+  width: 359px;
+  height: 452px;
+  background-color: #000000;
+  margin-bottom: 70px;
+}

@@ -1,0 +1,23 @@
+@font-face{
+  font-family: Montserrat-Regular;
+  src: url(./Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: Georgia-Bold;
+  src: url(./Georgia-Bold.ttf);
+}
+
+@font-face{
+  font-family: Georgia-Regular;
+  src: url(./Georgia-Regular.ttf);
+}
+
+@font-face{
+  font-family: Cairo-Regular;
+  src: url(./Cairo-Regular.woff) format('woff');
+  src: url(./Cairo-Regular.woff2) format('woff2');
+  src: url(./Cairo-Regular.eot) format('eot');
+  font-weight: 400;
+}

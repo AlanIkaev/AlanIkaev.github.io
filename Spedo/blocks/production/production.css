@@ -1,0 +1,27 @@
+.production {
+  margin-bottom: 120px;
+}
+.production .production__container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.production .production__title {
+  text-align: center;
+  color: #000000;
+  font-size: 30px;
+  font-family: Georgia-Bold;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.production .production__subtitle {
+  text-align: center;
+  color: #6e6e6e;
+  font-size: 13px;
+  font-family: Cairo-Regular;
+  font-weight: 200;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 120px;
+}
