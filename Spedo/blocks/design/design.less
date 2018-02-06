@@ -1,0 +1,62 @@
+@black: #000000;
+@gray: #666666;
+
+.design{
+  display: flex;
+  display: -webkit-flex;
+  position: relative;
+  margin-bottom: 75px;
+  justify-content: space-between;
+
+  .design__text{
+    font-size: 18px;
+    font-family: Cairo-Regular;
+    font-weight: 400;
+    color: @black;
+    text-transform: uppercase;
+    align-self: center;
+
+    .design__title{
+      font-family: Georgia-Bold;
+      font-size: 30px;
+      font-weight: 700;
+
+      .design__title--span{
+        font-family: Georgia-Regular;
+        font-weight: 400;
+      }
+    }
+
+    .design__link{
+      display: inline-block;
+      font-family: Georgia-Regular;
+      color: @gray;
+      text-decoration: none;
+
+      &:after{
+        background-color: @gray;
+        display: block;
+        content: "";
+        height: 1px;
+        width: 0%;
+        -webkit-transition: width .3s ease-in-out;
+        -moz--transition: width .3s ease-in-out;
+        transition: width .3s ease-in-out;
+      }
+
+      &:hover:after,&:focus:after{
+        width: 100%;
+      }
+    }
+  }
+
+  .design__img-block{
+    position: relative;
+    right: 0px;
+
+    .design__img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}

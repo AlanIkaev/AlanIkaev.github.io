@@ -1,0 +1,52 @@
+.design {
+  display: flex;
+  display: -webkit-flex;
+  position: relative;
+  margin-bottom: 75px;
+  justify-content: space-between;
+}
+.design .design__text {
+  font-size: 18px;
+  font-family: Cairo-Regular;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  align-self: center;
+}
+.design .design__text .design__title {
+  font-family: Georgia-Bold;
+  font-size: 30px;
+  font-weight: 700;
+}
+.design .design__text .design__title .design__title--span {
+  font-family: Georgia-Regular;
+  font-weight: 400;
+}
+.design .design__text .design__link {
+  display: inline-block;
+  font-family: Georgia-Regular;
+  color: #666666;
+  text-decoration: none;
+}
+.design .design__text .design__link:after {
+  background-color: #666666;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz--transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+.design .design__text .design__link:hover:after,
+.design .design__text .design__link:focus:after {
+  width: 100%;
+}
+.design .design__img-block {
+  position: relative;
+  right: 0px;
+}
+.design .design__img-block .design__img {
+  width: 100%;
+  height: auto;
+}

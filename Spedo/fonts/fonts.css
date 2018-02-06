@@ -9,6 +9,11 @@
 }
 
 @font-face{
+  font-family: Raleway-Medium;
+  src: url(./Raleway-Medium.ttf);
+}
+
+@font-face{
   font-family: Cairo-Regular;
   src: url(./Cairo-Regular.woff) format('woff');
   src: url(./Cairo-Regular.woff2) format('woff2');
