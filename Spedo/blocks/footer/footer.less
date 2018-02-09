@@ -1,43 +1,109 @@
 @logo: #313131;
-.footer__container{
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: space-around;
+@gray: #6e6e6e;
+@black: #000000;
+@facebook-clr: #3b5998;
+@twitter-clr: #00aced;
 
-  @media (min-width: 576px) {
-    .header__container {
-      max-width: 540px;
+.footer{
+
+  margin-bottom: 30px;
+
+  .footer__container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 576px) {
+      &{
+        max-width: 540px;
+      }
     }
-  }
 
-  @media (min-width: 768px) {
-    .header__container {
-      max-width: 720px;
+    @media (min-width: 768px) {
+      &{
+        max-width: 720px;
+      }
     }
-  }
 
-  @media (min-width: 992px) {
-    .header__container {
-      max-width: 960px;
+    @media (min-width: 992px) {
+      &{
+        max-width: 960px;
+      }
     }
-  }
 
-  @media (min-width: 1200px) {
-    .header__container {
-      max-width: 1140px;
+    @media (min-width: 1200px) {
+      &{
+        max-width: 1140px;
+      }
     }
-  }
 
-  .footer__logo{
-    font-family: Georgia-Bold;
-    font-size: 30px;
-    font-weight: 700;
-    color: @logo;
-    text-transform: uppercase;
-    text-decoration: none;
+    .footer__logo{
+      font-family: Georgia-Bold;
+      font-size: 30px;
+      font-weight: 700;
+      color: @logo;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    .footer__menu{
+      width: 495px;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-between;
+    }
+
+    .footer__link{
+      font-family: Georgia-Regular;
+      font-size: 14px;
+      font-weight: 400;
+      color: @gray;
+      line-height: 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover{
+        color: @black;
+        transition: 0.5s ease;
+      }
+    }
+
+    .footer__address{
+      display: flex;
+      display: -webkit-flex;
+
+      .footer__follow{
+        font-family: Georgia-Regular;
+        font-size: 14px;
+        font-weight: 400;
+        color: @gray;
+        text-decoration: none;
+        text-transform: uppercase;
+        max-width: 232px;
+        margin-right: 50px;
+
+        &:hover{
+          color: @black;
+          transition: 0.5s ease;
+        }
+
+        &:last-child{
+          margin: 0;
+        }
+      }
+
+      .footer__follow--facebook:hover{
+        color: @facebook-clr;
+      }
+
+      .footer__follow--twitter:hover{
+        color: @twitter-clr;
+      }
+    }
   }
 }
