@@ -15,35 +15,28 @@
   }
   
   .navigation__menu{
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     display: -webkit-flex;
-    justify-content: center;
+    justify-content: space-between;
 
-    .navigation__menu-list{
-      list-style: none;
+    @media (max-width: 970px){
+      align-items: center;
+      align-content: space-between;
+      flex-direction: column;
     }
-
-    .navigation__item{
-      display: inline-block;
-      margin-right: 20px;
-      
-      &:nth-child(6){
-        margin-right: 120px;
-      }
-
-      &:last-child{
-        margin: 0;
-      }
-    }    
-
+  
     .navigation__link{
       color: @link;
       font-family: Georgia-Bold;
       font-size: 16px;
       text-decoration: none;
       text-transform: uppercase;
+
+      @media (max-width: 970px){
+        padding: 5px 0px;
+      }
 
       &:hover{
         color: black;

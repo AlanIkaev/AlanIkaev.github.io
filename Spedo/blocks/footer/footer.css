@@ -1,37 +1,87 @@
-.footer__container {
+.footer {
+  margin-bottom: 30px;
+}
+.footer .footer__container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   display: -webkit-flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (min-width: 576px) {
-  .footer__container .header__container {
+  .footer .footer__container {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .footer__container .header__container {
+  .footer .footer__container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .footer__container .header__container {
+  .footer .footer__container {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .footer__container .header__container {
+  .footer .footer__container {
     max-width: 1140px;
   }
 }
-.footer__container .footer__logo {
+.footer .footer__container .footer__logo {
   font-family: Georgia-Bold;
   font-size: 30px;
   font-weight: 700;
   color: #313131;
   text-transform: uppercase;
   text-decoration: none;
+}
+.footer .footer__container .footer__menu {
+  width: 495px;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+}
+.footer .footer__container .footer__link {
+  font-family: Georgia-Regular;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6e6e6e;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.footer .footer__container .footer__link:hover {
+  color: #000000;
+  transition: 0.5s ease;
+}
+.footer .footer__container .footer__address {
+  display: flex;
+  display: -webkit-flex;
+}
+.footer .footer__container .footer__address .footer__follow {
+  font-family: Georgia-Regular;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6e6e6e;
+  text-decoration: none;
+  text-transform: uppercase;
+  max-width: 232px;
+  margin-right: 50px;
+}
+.footer .footer__container .footer__address .footer__follow:hover {
+  color: #000000;
+  transition: 0.5s ease;
+}
+.footer .footer__container .footer__address .footer__follow:last-child {
+  margin: 0;
+}
+.footer .footer__container .footer__address .footer__follow--facebook:hover {
+  color: #3b5998;
+}
+.footer .footer__container .footer__address .footer__follow--twitter:hover {
+  color: #00aced;
 }
