@@ -219,6 +219,7 @@
 @media (max-width: 767px) {
   .feedback .feedback__form {
     justify-content: center;
+    flex-direction: column;
   }
 }
 .feedback .feedback__item {
