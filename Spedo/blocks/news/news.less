@@ -23,6 +23,7 @@
   @media (min-width: 768px) {
     .news__container {
       max-width: 720px;
+      justify-content: center;
     }
   }
 
@@ -111,15 +112,19 @@
         transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
       }
     }
+  }
 
     .news__img-container{
       max-width: 394px;
       max-height: 933px;
+      
+      @media (max-width: 768px){
+        display: none;
+      }
 
       .news__img{
         width: 100%;
         height: auto;
       }
     }
-  }
 }

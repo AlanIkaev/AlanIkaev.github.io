@@ -4,6 +4,13 @@
   position: relative;
   margin-bottom: 75px;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 1432px) {
+  .design {
+    justify-content: center;
+    text-align: center;
+  }
 }
 .design .design__text {
   font-size: 18px;
@@ -12,6 +19,11 @@
   color: #000000;
   text-transform: uppercase;
   align-self: center;
+}
+@media (max-width: 1432px) {
+  .design .design__text {
+    padding-bottom: 20px;
+  }
 }
 .design .design__text .design__title {
   font-family: Georgia-Bold;
@@ -45,6 +57,11 @@
 .design .design__img-block {
   position: relative;
   right: 0px;
+}
+@media (max-width: 1432px) {
+  .design .design__img-block {
+    width: 100%;
+  }
 }
 .design .design__img-block .design__img {
   width: 100%;

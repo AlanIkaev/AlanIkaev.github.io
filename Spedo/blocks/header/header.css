@@ -1,6 +1,6 @@
 .header {
   padding: 40px 0px;
-  background-color: black;
+  background-color: #000000;
 }
 .header .header__container {
   padding-right: 15px;
@@ -33,7 +33,7 @@
 }
 .header .header__link {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-family: Montserrat-Regular;
   font-size: 12px;
   margin-right: 30px;
@@ -45,6 +45,17 @@
 }
 .header .header__link:last-child {
   margin: 0;
+}
+.header .header__link--cart:after {
+  content: '5';
+  position: relative;
+  left: -5px;
+  top: -10px;
+  text-align: center;
+  padding: 2px 6px;
+  color: #ffffff;
+  background-color: #fd3131;
+  border-radius: 50%;
 }
 .header .header__helper .header__link:last-child {
   margin: 0;
@@ -61,6 +72,8 @@
   width: 25px;
   height: 15px;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
 }
 @media (min-width: 768px) {
   .header .header__burger {

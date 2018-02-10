@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Spedo</title>
   <link rel="stylesheet" href="./global-css/normalize.css">
-<!--   <link rel="stylesheet" href="./global-css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="./global-css/font-awesome.min.css">
   <link rel="stylesheet" href="./fonts/fonts.css">
   <link rel="stylesheet" href="./blocks/header/header.css">
   <link rel="stylesheet" href="./blocks/mobile-menu/mobile-menu.css">
@@ -22,11 +22,6 @@
 <body>
   <header class="header">
     <div class="header__container">
-      <nav class="header__burger">
-        <div class="header__burger-line"></div>
-        <div class="header__burger-line"></div>
-        <div class="header__burger-line"></div>
-      </nav>
       <nav class="header__helper">
         <a href="" class="header__link"></a>
         <a href="" class="header__link">english</a>
@@ -37,18 +32,21 @@
       <nav class="header__authorization">
         <a href="" class="header__link">login</a>
         <a href="" class="header__link">sign up</a>
-        <a href="" class="header__link header__link--cart"></a>
+        <a href="" class="header__link header__link--cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+      </nav>
+      <nav class="header__burger">
+        <div class="header__burger-line"></div>
+        <div class="header__burger-line"></div>
+        <div class="header__burger-line"></div>
       </nav>
     </div>
   </header>
-  <nav class="mobile">
-    <ul class="mobile__menu">
-      <li class="mobile__item"><a href="" class="mobile__link">One</a></li>
-      <li class="mobile__item"><a href="" class="mobile__link">Two</a></li>
-      <li class="mobile__item"><a href="" class="mobile__link">Three</a></li>
-      <li class="mobile__item"><a href="" class="mobile__link">Three</a></li>
-      <li class="mobile__item"><a href="" class="mobile__link">Three</a></li>
-    </ul>
+  <nav class="mobile-menu">
+    <a href="" class="mobile-menu__link">One</a>
+    <a href="" class="mobile-menu__link">Two</a>
+    <a href="" class="mobile-menu__link">Three</a>
+    <a href="" class="mobile-menu__link">Four</a>
+    <a href="" class="mobile-menu__link">Five</a>
   </nav>
   <div class="navigation">
     <h1 class="navigation__title">spedo</h1>
@@ -70,27 +68,24 @@
           <p class="best__title">best of <br>whites</p>
           <a href="" class="best__link">view products <i class="fa fa-angle-right"></i></a>
         </div>
-        <img src="./blocks/best/img/model-1.png" alt="" class="best__img">
       </div>
       <div class="best__block">
         <div class="best__text best__text--two">
           <p class="best__title">best of <br>summer</p>
           <a href="" class="best__link">view products <i class="fa fa-angle-right"></i></a>
-        </div>        <img src="./blocks/best/img/model-2.png" alt="" class="best__img">
+        </div>        
       </div>
       <div class="best__block">
         <div class="best__text best__text--three">
           <p class="best__title">best of <br>red</p>
           <a href="" class="best__link">view products <i class="fa fa-angle-right"></i></a>
         </div>
-        <img src="./blocks/best/img/model-3.png" alt="" class="best__img">
       </div>
       <div class="best__block">
         <div class="best__text best__text--four">
           <p class="best__title">best of <br>black</p>
           <a href="" class="best__link">view products <i class="fa fa-angle-right"></i></a>
         </div>
-        <img src="./blocks/best/img/model-4.png" alt="" class="best__img">
       </div>
     </div>
   </div>
@@ -107,7 +102,7 @@
           <div class="products__info">
             <div class="products__name-category-block">
               <div class="products__descriptions">
-                <p class="products__name">fantastic black dress.</p>
+                <p class="products__name">fantastic white dress.</p>
                 <span class="products__category">party dress</span>
               </div>
               <div class="products__price-block">
@@ -142,9 +137,6 @@
             <a href="" class="products__purchase-btn">add to cart</a>
             <a href="" class="products__purchase-btn">show gallery</a>
           </div>
-<!--           <figure class="products__img">
-            <img src="./blocks/products/img/item-two.png" alt="" class="products__img--modif">
-          </figure> -->
           <div class="products__info">
             <div class="products__name-category-block">
               <div class="products__descriptions">
@@ -221,9 +213,6 @@
             <a href="" class="products__purchase-btn">add to cart</a>
             <a href="" class="products__purchase-btn">show gallery</a>
           </div>
-<!--           <figure class="products__img">
-            <img src="./blocks/products/img/item-four.png" alt="" class="products__img--modif">
-          </figure> -->
           <div class="products__info">
             <div class="products__name-category-block">
               <div class="products__descriptions">
@@ -262,10 +251,6 @@
             <a href="" class="products__purchase-btn">add to cart</a>
             <a href="" class="products__purchase-btn">show gallery</a>
           </div>
-
-<!--           <figure class="products__img">
-            <img src="./blocks/products/img/item-five.png" alt="" class="products__img--modif">
-          </figure> -->
           <div class="products__info">
             <div class="products__name-category-block">
               <div class="products__descriptions">
@@ -304,9 +289,6 @@
             <a href="" class="products__purchase-btn">add to cart</a>
             <a href="" class="products__purchase-btn">show gallery</a>
           </div>
-<!--           <figure class="products__img">
-            <img src="./blocks/products/img/item-six.png" alt="" class="products__img--modif">
-          </figure> -->
           <div class="products__info">
             <div class="products__name-category-block">
               <div class="products__descriptions">
@@ -362,9 +344,9 @@
         </p>
         <a href="" class="news__btn">check offers    <i class="fa fa-angle-right"></i></a>
       </div>
-      <figure class="news__img-container">
+      <div class="news__img-container">
         <img src="./blocks/news/img/model6.png" alt="model" class="news__img">
-      </figure>
+      </div>
     </div>
   </article>
   <div class="subscription">
@@ -388,12 +370,11 @@
       </nav>
       <address class="footer__address">
         <a href="" class="footer__follow">follow us on</a>
-        <a href="" class="footer__follow footer__follow--facebook"><i class="fa fa-facebook-square"></i></a>
+        <a href="" class="footer__follow footer__follow--facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
         <a href="" class="footer__follow footer__follow--twitter"><i class="fa fa-twitter"></i></a>
       </address>
     </div>
   </footer>
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <script src="./blocks/mobile-menu/mobile-menu.js"></script>
 </body>
 </html>

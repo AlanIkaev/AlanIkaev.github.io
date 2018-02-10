@@ -11,6 +11,12 @@
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1023px) {
+  .footer .footer__container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 @media (min-width: 576px) {
   .footer .footer__container {
     max-width: 540px;
@@ -39,11 +45,23 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+@media (max-width: 1023px) {
+  .footer .footer__container .footer__logo {
+    padding-bottom: 30px;
+  }
+}
 .footer .footer__container .footer__menu {
   width: 495px;
   display: flex;
   display: -webkit-flex;
   justify-content: space-between;
+}
+@media (max-width: 1023px) {
+  .footer .footer__container .footer__menu {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
 }
 .footer .footer__container .footer__link {
   font-family: Georgia-Regular;

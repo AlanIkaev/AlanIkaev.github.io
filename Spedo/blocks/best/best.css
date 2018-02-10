@@ -21,26 +21,39 @@
   height: 276px;
   background-color: #e6eef0;
   margin: 0px 30px 30px 0px;
+  background-image: url("img/model-1.png");
+  background-position: right top;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 .best .best__block:nth-child(2) {
   width: 653px;
   height: 438px;
   background-color: #fbfafa;
   margin-right: 30px;
+  background-image: url("img/model-2.png");
+  background-position: right top;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 .best .best__block:nth-child(3) {
   width: 458px;
   height: 438px;
   background-color: #f5f5f5;
   margin-bottom: 30px;
+  background-image: url("img/model-3.png");
+  background-position: right bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 .best .best__block:last-child {
   width: 458px;
   height: 276px;
   background-color: #e6eef0;
-}
-.best .best__img {
-  float: right;
+  background-image: url("img/model-4.png");
+  background-position: right top;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 .best .best__text {
   display: inline-block;

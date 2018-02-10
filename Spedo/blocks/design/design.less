@@ -7,6 +7,12 @@
   position: relative;
   margin-bottom: 75px;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 1432px){
+    justify-content: center;
+    text-align: center;
+  }
 
   .design__text{
     font-size: 18px;
@@ -15,6 +21,10 @@
     color: @black;
     text-transform: uppercase;
     align-self: center;
+
+    @media (max-width: 1432px){
+      padding-bottom: 20px;
+    }
 
     .design__title{
       font-family: Georgia-Bold;
@@ -53,6 +63,10 @@
   .design__img-block{
     position: relative;
     right: 0px;
+
+    @media (max-width: 1432px){
+      width: 100%;
+    }
 
     .design__img{
       width: 100%;

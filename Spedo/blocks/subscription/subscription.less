@@ -17,6 +17,10 @@
     align-items: center;
     padding-bottom: 100px;
     border-bottom: 1px solid @border-bottom;
+
+    @media (max-width: 1024px){
+      flex-direction: column;
+    }
   }
 
   @media (min-width: 576px) {
@@ -49,35 +53,55 @@
     color: @black;
     font-weight: 400;
     text-transform: uppercase;
+
+    @media (max-width: 1024px){
+      padding-bottom: 20px;
+      text-align: center;
+    }
   }
 
-  .subscription__email{
-    width: 280px;
-    height: 55px;
-    padding-left: 18px;
-    font-family: Cairo-Regular;
-    font-size: 14px;
-    color: @gray;
-    font-weight: 400;
-    border: 1px solid @black;
-    margin: 0;
-  }
+  .subscription__form{
+    display: flex;
+    display: -webkit-flex;
 
-  .subscription__submit{
-    width: 121px;
-    padding: 20px 0px;
-    color: @black;
-    font-family: Georgia-Regular;
-    font-weight: 400;
-    background-color: transparent;
-    cursor: pointer;
-    border: 1px solid @black;
-    margin: 0;
-    
-    &:hover,&:focus,&:active{
-      background-color: @black;
-      color: @white;
-      transition: 0.5s ease;
-    }  
+    @media (max-width: 1024px){
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .subscription__email{
+      width: 280px;
+      height: 63px;
+      padding-left: 18px;
+      font-family: Cairo-Regular;
+      font-size: 14px;
+      color: @gray;
+      font-weight: 400;
+      border: 1px solid @black;
+      margin: 0;
+
+      @media (max-width: 1024px){
+        margin-bottom: 20px;
+      }
+    }
+
+    .subscription__submit{
+      width: 121px;
+      height: 67px;
+      color: @black;
+      font-family: Georgia-Regular;
+      font-weight: 400;
+      background-color: transparent;
+      cursor: pointer;
+      border: 1px solid @black;
+      margin: 0;
+      
+      &:hover,&:focus,&:active{
+        background-color: @black;
+        color: @white;
+        transition: 0.5s ease;
+      }  
+    }
   }
 }
