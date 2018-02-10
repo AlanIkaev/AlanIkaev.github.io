@@ -67,6 +67,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (max-width: 509px) {
+  .partners .partners__block {
+    justify-content: center;
+  }
+}
 @media (min-width: 576px) {
   .partners .partners__block {
     max-width: 540px;

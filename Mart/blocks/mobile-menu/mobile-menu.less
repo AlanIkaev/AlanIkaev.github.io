@@ -1,0 +1,73 @@
+@main: #1abc9c;
+@white: #ffffff;
+@black: #000000;
+.mobile-menu{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  right: -100%;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  border-top: 1px solid white;
+  background-color: @main;
+  text-align: center;
+  z-index: 1;
+
+  .mobile-menu__link{
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @white; 
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    &:active{
+    -webkit-tap-highlight-color:rgba(0,0,0,0); 
+    -webkit-user-select:none;                 
+    }
+
+    &:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    }
+
+    &:hover,&:before,&:active{
+      color: @black;
+    }
+
+    &:hover:before, &:focus:before, &:active:before{
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+}
+
+.mobile-menu--open{
+  right: 0;
+  opacity: 1;
+}
