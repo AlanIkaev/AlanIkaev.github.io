@@ -6,33 +6,41 @@
   text-align: center;
   color: #313131;
   font-size: 36px;
-  font-family: Georgia-Bold;
+  font-family: Georgia;
   text-transform: uppercase;
   margin-bottom: 100px;
 }
-.navigation .navigation__menu {
-  max-width: 900px;
+.navigation .navigation__wrapper {
+  display: flex;
+  display: -webkit-flex;
+  max-width: 920px;
   margin: 0 auto;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 900px) {
+  .navigation .navigation__wrapper {
+    display: none;
+  }
+}
+.navigation .navigation__wrapper .navigation__menu {
+  max-width: 635px;
+  width: 100%;
   display: flex;
   display: -webkit-flex;
   justify-content: space-between;
 }
-@media (max-width: 970px) {
-  .navigation .navigation__menu {
-    align-items: center;
-    align-content: space-between;
-    flex-direction: column;
-  }
-}
-.navigation .navigation__menu .navigation__link {
+.navigation .navigation__wrapper .navigation__link {
   color: #6e6e6e;
-  font-family: Georgia-Bold;
+  font-family: Georgia;
   font-size: 16px;
+  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
   line-height: 30px;
 }
-.navigation .navigation__menu .navigation__link:hover {
+.navigation .navigation__wrapper .navigation__link:hover {
   color: black;
   transition: 0.3s;
 }

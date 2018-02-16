@@ -1,7 +1,7 @@
 @title: #313131;
 @link: #6e6e6e;
+
 .navigation{
-  
   padding-top: 131px;
   margin-bottom: 98px;
 
@@ -9,28 +9,37 @@
     text-align: center;
     color: @title;
     font-size: 36px;
-    font-family: Georgia-Bold;
+    font-family: Georgia;
     text-transform: uppercase;
     margin-bottom: 100px;
   }
   
-  .navigation__menu{
-    max-width: 900px;
-    margin: 0 auto;
+  .navigation__wrapper{
     display: flex;
     display: -webkit-flex;
+    max-width: 920px;
+    margin: 0 auto;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
 
-    @media (max-width: 970px){
-      align-items: center;
-      align-content: space-between;
-      flex-direction: column;
+      @media (max-width: 900px){
+        display: none;
+      }
+
+    .navigation__menu{
+      max-width: 635px;
+      width: 100%;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-between;
     }
-  
+
     .navigation__link{
       color: @link;
-      font-family: Georgia-Bold;
+      font-family: Georgia;
       font-size: 16px;
+      font-weight: 400;
       text-decoration: none;
       text-transform: uppercase;
       line-height: 30px;
