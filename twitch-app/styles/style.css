@@ -10,12 +10,11 @@ head {
   height: 100%;
   margin: 0 auto;
   background: #6441a5;
-  border: transparent;
-  border-radius: 3px;
 }
 @media (min-width: 768px) {
   .app {
     width: 425px;
+    border-radius: 3px;
   }
 }
 .control {
@@ -79,5 +78,5 @@ head {
 }
 .status {
   width: 20%;
-  color: #262626;
+  color: #f1f1f1;
 }

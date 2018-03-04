@@ -43,7 +43,7 @@ function getChannelsInfo(){
 
     var req = new XMLHttpRequest();
 
-    req.open('GET', makeURL("streams", item), false);
+    req.open('GET', makeURL("streams", item), true);
 
     req.onload = function(){
 
@@ -65,34 +65,34 @@ function getChannelsInfo(){
           game = data.stream.game;
           status = 'online';
         }
-      }
-    }
 
-    req.send();
+        req.open('GET', makeURL("channels", item), true)
 
-    req.open('GET', makeURL("channels", item), true)
+        req.onload = function(){
 
-      req.onload = function(){
+          if (req.status >= 200 && req.status < 400){
 
-        if (req.status >= 200 && req.status < 400){
+            var data = JSON.parse(req.responseText);
 
-          var data = JSON.parse(req.responseText);
+            if (status === 'online'){
+              var elem = document.createElement("div");
+              elem.classList.add("online__card");
+              elem.innerHTML = `<div class="img-container"><img src="${data.logo}" alt="logo" class="img"></div><a href="${data.url}" class="link">${item}</a><p class="status">${game}</p>`;
+              online.appendChild(elem);
+            }
 
-          if (status === 'online'){
-            var elem = document.createElement("div");
-            elem.classList.add("online__card");
-            elem.innerHTML = `<div class="img-container"><img src="${data.logo}" alt="logo" class="img"></div><a href="${data.url}" class="link">${item}</a><p class="status">${game}</p>`;
-            online.appendChild(elem);
-          }
-
-          else if (status == 'offline'){
-            var elem = document.createElement("div");
-            elem.classList.add("offline__card");
-            elem.innerHTML = `<div class="img-container"><img src="${data.logo}" alt="logo" class="img"></div><a href="${data.url}" class="link">${item}</a><p class="status">${game}</p>`;
-            offline.appendChild(elem);         
+            else if (status == 'offline'){
+              var elem = document.createElement("div");
+              elem.classList.add("offline__card");
+              elem.innerHTML = `<div class="img-container"><img src="${data.logo}" alt="logo" class="img"></div><a href="${data.url}" class="link">${item}</a><p class="status">${game}</p>`;
+              offline.appendChild(elem);         
+            }
           }
         }
+
+        req.send();
       }
+    }
 
     req.send();      
   })
