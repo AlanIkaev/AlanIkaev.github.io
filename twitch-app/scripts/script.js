@@ -1,4 +1,30 @@
-var channels = ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"];
+// "ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"
+
+
+if (!localStorage.getItem("channels")){
+  
+  var array = [];
+  localStorage.setItem("channels", JSON.stringify(array));
+}
+
+var input = document.querySelector(".form__input");
+var inputbutton = document.querySelector(".form__button");
+
+inputbutton.onclick = function(){
+
+  if (input.value.length != 0){
+    var unserialArr = JSON.parse(localStorage.getItem("channels"));
+    unserialArr.push(String(input.value));
+    localStorage.setItem("channels", JSON.stringify(unserialArr));
+    alert("Добавлено");
+    getChannelsInfo();
+  } 
+
+  else{
+    alert("Введите название канала");
+  }
+}
+
 
 var online = document.querySelector(".online");
 var offline = document.querySelector(".offline");
@@ -36,6 +62,11 @@ function makeURL(type, item){
 }
 
 function getChannelsInfo(){
+
+  let channels = JSON.parse(localStorage.getItem("channels"));
+
+  online.innerHTML = '';
+  offline.innerHTML = '';
 
   channels.forEach(function(item){
 

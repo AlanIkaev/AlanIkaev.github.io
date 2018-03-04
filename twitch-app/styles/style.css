@@ -5,6 +5,14 @@
 head {
   font-family: Droid-Sans;
 }
+body {
+  background: #ece9e6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ece9e6, #ffffff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 .app {
   width: 100%;
   height: 100%;
@@ -39,6 +47,11 @@ head {
   -webkit-box-shadow: -1px -1px 41px -3px #000000;
   -moz-box-shadow: -1px -1px 41px -3px #000000;
   box-shadow: -1px -1px 41px -3px #000000;
+}
+.inputs {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
 }
 .hidden {
   display: none;
