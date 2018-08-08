@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Droid-Sans";
-  src: url(fonts/Droid-Sans.woff);
+  src: url(./fonts/Droid-Sans.woff);
 }
 head {
   font-family: Droid-Sans;
@@ -32,7 +32,6 @@ body {
   padding: 20px 0px;
 }
 .control .control__btn {
-  position: relative;
   width: 100px;
   font-size: 16px;
   padding: 10px;
@@ -60,8 +59,8 @@ body {
   display: flex;
   display: -webkit-flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 20px 10px;
+  justify-content: space-between;
+  padding: 15px;
   background-color: #6441a5;
   border-top: 2px solid #f1f1f1;
 }
@@ -69,8 +68,8 @@ body {
   display: flex;
   display: -webkit-flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 20px 10px;
+  justify-content: space-between;
+  padding: 15px;
   background-color: #b9a3e3;
   border-top: 2px solid #f1f1f1;
 }
@@ -84,12 +83,43 @@ body {
   height: auto;
 }
 .link {
-  width: 60%;
   text-decoration: none;
   color: #f1f1f1;
   text-align: center;
 }
 .status {
-  width: 20%;
+  margin: 0;
+  display: inline-block;
   color: #f1f1f1;
+}
+.form {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.form .form__input {
+  border-radius: 3px;
+  border: transparent;
+  width: 138px;
+  height: 24px;
+  margin-right: 10px;
+}
+.form .form__button {
+  width: 100px;
+  font-size: 16px;
+  padding: 5px 10px;
+  background: #f1f1f1;
+  color: #262626;
+  border: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.form .form__button:hover {
+  transition: box-shadow 0.3s ease;
+  -webkit-box-shadow: -1px -1px 41px -3px #000000;
+  -moz-box-shadow: -1px -1px 41px -3px #000000;
+  box-shadow: -1px -1px 41px -3px #000000;
 }

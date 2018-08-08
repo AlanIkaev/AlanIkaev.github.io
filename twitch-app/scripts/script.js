@@ -1,6 +1,3 @@
-// "ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"
-
-
 if (!localStorage.getItem("channels")){
   
   var array = [];
@@ -108,14 +105,14 @@ function getChannelsInfo(){
             if (status === 'online'){
               var elem = document.createElement("div");
               elem.classList.add("online__card");
-              elem.innerHTML = `<div class="img-container"><img src="${data.logo}" alt="logo" class="img"></div><a href="${data.url}" class="link">${item}</a><p class="status">${game}</p>`;
+              elem.innerHTML = `<div class="img-container"><a href="${data.url}"><img src="${data.logo}" alt="logo" class="img"></a></div><a href="${data.url}" class="link">${item}</a><p class="status">${game}</p>`;
               online.appendChild(elem);
             }
 
             else if (status == 'offline'){
               var elem = document.createElement("div");
               elem.classList.add("offline__card");
-              elem.innerHTML = `<div class="img-container"><img src="${data.logo}" alt="logo" class="img"></div><a href="${data.url}" class="link">${item}</a><p class="status">${game}</p>`;
+              elem.innerHTML = `<div class="img-container"><a href="${data.url}"><img src="${data.logo}" alt="logo" class="img"></a></div><a href="${data.url}" class="link">${item}</a><p class="status">${game}</p>`;
               offline.appendChild(elem);         
             }
           }
