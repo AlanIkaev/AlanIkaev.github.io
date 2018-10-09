@@ -12,6 +12,11 @@
 		  margin-left: auto;
 		  vertical-align: center;
 
+		  @media (max-width: 576px){
+			padding-left: 15px;
+			padding-right: 15px;
+		  }
+
 		  @media (min-width: 576px){
 		  	max-width: 540px;
 		  }
@@ -33,13 +38,20 @@
 		display: flex;
 		display: -webkit-flex;
 		flex-wrap: wrap;
+
+		@media (max-width: 350px){
+			flex-direction: column;
+		}
+
+		@media (min-width: 350px){
+			align-items: center;
+		}
 	}
 
 	.top-header__info{
 		display: flex;
 		display: -webkit-flex;
 		justify-content: space-between;
-		align-items: center;
 	}
 
 	.top-header__number{

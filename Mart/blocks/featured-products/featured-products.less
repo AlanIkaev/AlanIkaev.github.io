@@ -90,6 +90,10 @@
 	display: -webkit-flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 
 	@media (max-width: 767px){
 		justify-content: center;
@@ -103,6 +107,7 @@
 		background-color: @lightblue;
 		padding-top: 8.5px;
 		margin-bottom: 30px;
+		-webkit-tap-highlight-color: transparent;
 
 		&:first-child{
 			background-image: url(img/product1.png);
