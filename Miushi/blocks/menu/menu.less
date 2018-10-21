@@ -1,0 +1,73 @@
+@import (reference) "../../global-styles/styles.less";
+
+.menu{
+	width: 100%;
+	padding: 20px 0 15px 0;
+
+	@media(max-width: 992px){
+		display: none;
+	}
+
+	.menu__container{
+
+		.container();
+
+		.menu__list{
+			display: flex;
+			display: -webkit-flex;
+			justify-content: space-around;
+
+			.menu__link{
+				font-family: Open Sans;
+				font-size: 0.875rem;
+				font-weight: 600;
+				font-style: normal;
+				color: @black;
+				padding: 20px 25px;
+
+				&:hover{
+					background-color: @light-green;
+					color: @white;
+					transition: all 0.3s ease 0s;
+				}
+			}
+
+			.menu__link--cabinet,.menu__link--basket{
+				font-family: Open Sans;
+				font-size: 0.875rem;
+				font-weight: 600;
+				font-style: normal;
+				color: @black;
+
+				&:hover{
+					color: @rifle-green;
+					transition: all 0.3s ease 0s;
+				}
+			}
+
+			.menu__link--cabinet{
+				&:before{
+					content: "";
+					display: block;
+					background: url("img/user.png") no-repeat;
+					float: left;
+					width: 22px;
+					height: 22px;
+					margin: 0 6px 0 0;
+				}
+			}
+
+			.menu__link--basket{
+				&:before{
+					content: "";
+					display: block;
+					background: url("img/cart.png") no-repeat;
+					float: left;
+					width: 23px;
+					height: 21px;
+					margin: 0 6px 0 0;
+				}				
+			}
+		}
+	}
+}

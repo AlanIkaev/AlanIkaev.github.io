@@ -1,0 +1,26 @@
+@import (reference) "../../global-styles/styles.less";
+
+.mobile-menu{
+	position: relative;
+	width: 20px;
+	height: 14px;
+
+	.mobile-menu__line{
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: @mobile-menu;
+
+		&:first-child{
+			top:0;
+		}
+
+		&:nth-child(2){
+			top: 5px;
+		}
+
+		&:last-child{
+			top: 10px;
+		}
+	}
+}

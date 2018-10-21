@@ -1,0 +1,65 @@
+@import (reference) "../../global-styles/styles.less";
+
+.mobile{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media(min-width: 993px){
+		display: none;
+	}
+
+	.mobile__logo-link{
+		display: block;
+		width: 46px;
+		height: 46px;
+		background: url(img/logo.png) no-repeat;
+
+		@media (min-width: 750px) and (max-width: 992px){
+			width: 190px;
+			height: 68px;
+			background: url(../header/img/logo.png) no-repeat;
+		}
+	}
+
+	.mobile__user-menu{
+		max-width: 76px;
+
+		.mobile__user-menu-link{
+			display: inline-block;
+			height: 22px;
+
+
+			&:last-child{
+				margin-left: 25px;
+			}
+		}
+	}
+
+	.mobile__menu{
+		position: relative;
+		width: 20px;
+		height: 14px;
+		margin-right: 50px;
+
+		.mobile__menu-line{
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: @mobile-menu;
+
+			&:first-child{
+				top:0;
+			}
+
+			&:nth-child(2){
+				top: 5px;
+			}
+
+			&:last-child{
+				top: 10px;
+			}
+		}
+	}
+}

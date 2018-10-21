@@ -1,0 +1,99 @@
+@import (reference) "../../global-styles/styles.less";
+
+.header{
+	width: 100%;
+	padding:20px 0px;
+	border-bottom: 1px solid @border-color;
+
+	@media (max-width: 992px){
+		border: none;
+	}
+
+	.header__container{
+		.container();
+	}
+
+	.header__info{
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media(max-width: 992px){
+			display: none;
+		}
+	}
+
+	.header__address{
+		color: @black;
+		font-family: MyriadPro;
+		font-size: 0.875rem;
+
+		&:hover{
+			text-decoration: underline;
+		}
+
+		&:before{
+			content: "";
+			display: block;
+			background: url("icons/geo.png") no-repeat;
+			float: left;
+			width: 11px;
+			height: 16px;
+			margin: 0 9px 0 0;
+		}
+	}
+
+	.header__email{
+		color: black;
+		font-family: MyriadPro;
+		font-size: 0.875rem;
+
+		&:hover{
+			text-decoration: underline;
+		}
+
+		&:before{
+			content: "";
+			display: block;
+			background: url("icons/mail.png") no-repeat;
+			float: left;
+			width: 12px;
+			height: 9px;
+			margin: 2px 9px 0 0;
+		}
+	}
+
+	.header__phone{
+		font-family: Open Sans;
+		font-size: 1.125rem;
+		font-weight: 700;
+		font-style: normal;
+		color: @black;
+	}
+
+	.header__work-time{
+		font-family: Open Sans;
+		font-size: 0.625rem;
+		font-weight: 400;
+	}
+
+	.header__back-call{
+		font-family: Open Sans;
+		font-size: 0.813rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: @rifle-green;
+		text-align: center;
+		padding: 10px 20px;
+		border: 1px solid @rifle-green;
+		border-radius: 5px;
+		text-decoration: none;
+
+		&:hover{
+			background-color: @rifle-green;
+			color: @white;
+			transition: all 0.3s ease 0s;
+		}
+	}
+}

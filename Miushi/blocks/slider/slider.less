@@ -1,0 +1,151 @@
+@import (reference) "../../global-styles/styles.less";
+
+.slider{
+	
+	margin-bottom: 80px;
+
+	.slider__item{
+		width: 100%;
+		height: 675px;
+		position: relative;
+		background-image: url(img/bg675h.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		padding: 60px 0 0 300px;
+
+		@media (min-width: 992px) and (max-width: 1919px){
+			padding-left: 100px;
+		}
+		@media (min-width: 750px) and (max-width: 992px){
+			padding-left: 20px;
+			height: 420px;
+			background-image: url(img/bg420h.jpg)
+		}
+
+		@media (max-width: 749px){
+			padding: 35px 0 0 15px;
+			height: 242px;
+			background-image: url(img/bg242h.jpg);
+		}
+	}
+
+	.slider__jumbotron{
+		max-width: 570px;
+		text-align: left;
+
+		@media (min-width: 750px) and (max-width: 992px){
+			max-width: 345px;
+		}
+
+		@media (max-width: 749px){
+			max-width: 237px;
+		}
+	}
+
+	.slider__title{
+		font-family: Lemon Tuesday;
+		font-size: 6.875rem;
+		font-weight: 400;
+		color: @light-green;
+		margin-bottom: 40px;
+
+		@media (min-width: 750px) and (max-width: 992px){
+			font-size: 4.501rem;
+		}
+
+		@media (max-width: 749px){
+			font-size: 3.063rem;
+			margin-bottom: 10px;
+		}
+		
+	}
+
+	.slider__subtitle{
+		font-family: Open Sans;
+		color: @white;
+		font-size: 1.649rem;
+		font-style: italic;
+		font-weight: 300;
+		margin-bottom: 60px;
+
+		@media (min-width: 750px) and (max-width: 992px){
+			font-size: 1.125rem;
+		}
+
+		@media (max-width: 749px){
+			font-size: 0.75rem;
+		}
+	}
+
+	.slider__link{
+		padding: 15px 70px;
+		.btn();
+
+		@media (min-width: 750px) and (max-width: 992px){
+			padding: 15px 45px;
+		}
+
+		@media (max-width: 749px){
+			display: none;
+		}
+	}
+}
+
+.slider-button {
+  z-index: 1;
+  margin:5px auto;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  position: absolute;
+  cursor:pointer;
+  background: rgba(0, 0, 0, 0.5);
+  
+  &:hover{
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+  }
+
+  &.right{
+  	top: 45%;
+  	left: auto;
+  	right: 155px;
+
+	@media (min-width: 1000px) and (max-width: 1919px){
+	  right: 20px;
+	}  
+  }
+
+  &.left{
+  	top: 45%;
+  	right: auto;
+  	left: 155px;
+
+	@media (min-width: 1000px) and (max-width: 1919px){
+	  left: 20px;
+	} 
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+
+  &.right {
+    left: 30%;
+    transform: translate3d(0, -50%, 0) rotate(45deg);
+  }
+  
+  &.left{
+    left:40%;
+    transform: translate3d(0,-50%,0) rotate(-135deg);
+  }
+}
