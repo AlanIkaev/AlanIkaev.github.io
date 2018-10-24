@@ -1,0 +1,50 @@
+.offers {
+  height: 739px;
+  background-image: url("img/offers-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+.offers .offers__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 70px;
+  margin-bottom: 60px;
+}
+@media (min-width: 576px) {
+  .offers .offers__container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .offers .offers__container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .offers .offers__container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .offers .offers__container {
+    max-width: 1140px;
+  }
+}
+.offers .offers__container .offers__link {
+  display: inline-block;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.125rem;
+  color: #999999;
+  text-align: left;
+}
+.offers .offers__container .offers__link:hover {
+  color: #fd4f10;
+}
+.offers .offers__container .offers__link:first-child {
+  margin-right: 50px;
+}

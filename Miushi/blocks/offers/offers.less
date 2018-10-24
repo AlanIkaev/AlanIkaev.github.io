@@ -1,0 +1,32 @@
+@import (reference) "../../global-styles/styles.less";
+
+.offers{
+	height: 739px;
+	background-image: url("img/offers-bg.png");
+	background-size: cover;
+	background-position: center;
+
+	.offers__container{
+		.container();
+		padding-top: 70px;
+		margin-bottom: 60px;
+
+		.offers__link{
+			display: inline-block;
+			font-family: Open Sans;
+			font-weight: 600;
+			font-style: normal;
+			font-size: 1.125rem;
+			color: @offers-link;
+			text-align: left;
+
+			&:hover{
+				color: @offers-link-hover;
+			}
+
+			&:first-child{
+				margin-right: 50px;
+			}
+		}
+	}
+}
