@@ -1,0 +1,50 @@
+.sets {
+  margin-bottom: 85px;
+}
+.sets .sets__title {
+  font-family: Lemon Tuesday;
+  color: #32505a;
+  font-size: 3.75rem;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  margin-bottom: 45px;
+}
+@media (max-width: 500px) {
+  .sets .sets__title {
+    font-size: 2.75rem;
+  }
+}
+.sets .sets__title:before {
+  content: '';
+  display: inline-block;
+  background: url(../../global-img/dec-l.png);
+  width: 109px;
+  height: 40px;
+  margin-right: 37px;
+}
+@media (max-width: 500px) {
+  .sets .sets__title:before {
+    width: 74px;
+    height: 27px;
+    margin-right: 23px;
+    background: url(../../global-img/dec-l-500.png);
+  }
+}
+.sets .sets__title:after {
+  content: '';
+  display: inline-block;
+  background: url(../../global-img/dec-r.png);
+  width: 109px;
+  height: 40px;
+  margin-left: 37px;
+}
+@media (max-width: 500px) {
+  .sets .sets__title:after {
+    width: 74px;
+    height: 27px;
+    margin-left: 23px;
+    background: url(../../global-img/dec-r-500.png);
+  }
+}

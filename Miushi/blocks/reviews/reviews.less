@@ -1,0 +1,110 @@
+@import (reference) "../../global-styles/styles.less";
+
+.reviews{
+	margin-bottom: 85px;
+
+	.reviews__title-wrapper{
+		.container();
+
+		@media (max-width: 500px){
+			padding: 0;
+		}
+
+		.reviews__title{
+			.title();
+
+			@media (max-width: 500px){
+				font-size: 2.3rem;
+			}
+		}
+	}
+
+	.reviews__container{
+		.container();
+		margin: 0 auto;
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@media (max-width: 991px){
+			justify-content: center;
+		}
+	}
+
+	.reviews__item{
+		width: 360px;
+		border: 1px solid @reviews-border;
+		padding: 45px 50px;
+
+		@media (max-width: 991px){
+			margin-bottom: 40px;
+		}
+
+		@media (min-width: 320px) and (max-width: 425px){
+			width: 320px;
+			padding: 20px 15px;
+		}
+
+		@media (min-width: 750px) and (max-width: 1199px){
+			width: 347px;
+		}
+
+		&:last-child{
+			@media(max-width: 1199px){
+				display: none;
+			}
+		}
+	}
+
+	.reviews__item-inner{
+		margin: 0 auto;
+		width: 273px;
+		
+		.reviews__item-user-profile{
+			display: flex;
+			display: -webkit-flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 35px;
+
+			.reviews__item-user-name{
+				font-family: Open Sans;
+				font-size: 0.938rem;
+				font-weight: 700;
+				font-style: normal;
+				color: @vk-color;
+			}
+
+			.reviews__item-user-last{
+				font-family: Open Sans;
+				font-size: 0.813rem;
+				font-weight: 600;
+				font-style: normal;
+				color: @gray;
+			}
+		}
+
+		.reviews__item-user-review{
+			margin-bottom: 35px;
+		}
+
+		.reviews__item-user-msg{
+			font-family: Open Sans;
+			color: @black;
+			font-size: 0.875rem;
+			font-weight: 400;
+			font-style: normal;
+			margin-bottom: 30px;
+		}
+
+		.reviews__bar{
+			width: 273px;
+			height: 91px;
+			background-image: url("img/vk-bar.png");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+}

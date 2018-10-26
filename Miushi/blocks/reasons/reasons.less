@@ -1,0 +1,74 @@
+@import (reference) "../../global-styles/styles.less";
+
+.reasons{
+	margin-bottom: 85px;
+
+	.reasons__container{
+		.container();
+		margin: 0 auto;
+		display: flex;
+		display: -webkit-flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@media (min-width: 320px) and (max-width: 409px){
+			justify-content: center;			
+		}	
+	}
+
+	.reasons__title-wrapper{
+		.container();
+		.reasons__title{
+			.title();
+
+			@media (min-width: 320px) and (max-width: 749px){
+				font-size: 2.75rem;
+
+				&:before,&:after{
+					display: none;
+				}
+			}
+
+			@media (min-width: 750px) and (max-width: 992px){
+				font-size: 2.3rem;
+			}
+		}	
+	}
+
+	.reasons__item{
+		width: 190px;
+		text-align: center;
+		margin-bottom: 100px;
+
+		.reasons__item-img{
+			display: block;
+			margin: 0 auto 30px auto;
+		}
+
+		.reasons__item-text{
+			color: @reasons-clr;
+			font-family: Open Sans;
+			font-size: 1rem;
+			font-weight: 400;
+			font-style: normal;
+		}
+	}
+
+	.reasons__button, .reasons__button-reset{
+		.btn();
+		display: none;
+		color: @btn-color;
+		border: 1px solid @btn-color;
+		width: 292px;
+		height: 41px;
+		background-color: @white;
+
+		@media (max-width: 409px){
+			display: block;
+		}
+	}
+
+	.reasons__button-reset{
+		display: none;
+	}
+}

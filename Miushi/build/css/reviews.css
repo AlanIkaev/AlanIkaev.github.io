@@ -1,0 +1,194 @@
+.reviews {
+  margin-bottom: 85px;
+}
+.reviews .reviews__title-wrapper {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .reviews .reviews__title-wrapper {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .reviews .reviews__title-wrapper {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .reviews .reviews__title-wrapper {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews .reviews__title-wrapper {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 500px) {
+  .reviews .reviews__title-wrapper {
+    padding: 0;
+  }
+}
+.reviews .reviews__title-wrapper .reviews__title {
+  font-family: Lemon Tuesday;
+  color: #32505a;
+  font-size: 3.75rem;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  margin-bottom: 45px;
+}
+@media (max-width: 500px) {
+  .reviews .reviews__title-wrapper .reviews__title {
+    font-size: 2.75rem;
+  }
+}
+.reviews .reviews__title-wrapper .reviews__title:before {
+  content: '';
+  display: inline-block;
+  background: url(../../global-img/dec-l.png);
+  width: 109px;
+  height: 40px;
+  margin-right: 37px;
+}
+@media (max-width: 500px) {
+  .reviews .reviews__title-wrapper .reviews__title:before {
+    width: 74px;
+    height: 27px;
+    margin-right: 23px;
+    background: url(../../global-img/dec-l-500.png);
+  }
+}
+.reviews .reviews__title-wrapper .reviews__title:after {
+  content: '';
+  display: inline-block;
+  background: url(../../global-img/dec-r.png);
+  width: 109px;
+  height: 40px;
+  margin-left: 37px;
+}
+@media (max-width: 500px) {
+  .reviews .reviews__title-wrapper .reviews__title:after {
+    width: 74px;
+    height: 27px;
+    margin-left: 23px;
+    background: url(../../global-img/dec-r-500.png);
+  }
+}
+@media (max-width: 500px) {
+  .reviews .reviews__title-wrapper .reviews__title {
+    font-size: 2.3rem;
+  }
+}
+.reviews .reviews__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 576px) {
+  .reviews .reviews__container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .reviews .reviews__container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .reviews .reviews__container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews .reviews__container {
+    max-width: 1140px;
+  }
+}
+@media (max-width: 991px) {
+  .reviews .reviews__container {
+    justify-content: center;
+  }
+}
+.reviews .reviews__item {
+  width: 360px;
+  border: 1px solid #e6e6e6;
+  padding: 45px 50px;
+}
+@media (max-width: 991px) {
+  .reviews .reviews__item {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .reviews .reviews__item {
+    width: 320px;
+    padding: 20px 15px;
+  }
+}
+@media (min-width: 750px) and (max-width: 1199px) {
+  .reviews .reviews__item {
+    width: 347px;
+  }
+}
+@media (max-width: 1199px) {
+  .reviews .reviews__item:last-child {
+    display: none;
+  }
+}
+.reviews .reviews__item-inner {
+  margin: 0 auto;
+  width: 273px;
+}
+.reviews .reviews__item-inner .reviews__item-user-profile {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.reviews .reviews__item-inner .reviews__item-user-profile .reviews__item-user-name {
+  font-family: Open Sans;
+  font-size: 0.938rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #5e81a7;
+}
+.reviews .reviews__item-inner .reviews__item-user-profile .reviews__item-user-last {
+  font-family: Open Sans;
+  font-size: 0.813rem;
+  font-weight: 600;
+  font-style: normal;
+  color: #999999;
+}
+.reviews .reviews__item-inner .reviews__item-user-review {
+  margin-bottom: 35px;
+}
+.reviews .reviews__item-inner .reviews__item-user-msg {
+  font-family: Open Sans;
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+.reviews .reviews__item-inner .reviews__bar {
+  width: 273px;
+  height: 91px;
+  background-image: url("img/vk-bar.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

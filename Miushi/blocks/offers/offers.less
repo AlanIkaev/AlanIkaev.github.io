@@ -1,6 +1,7 @@
 @import (reference) "../../global-styles/styles.less";
 
 .offers{
+	margin-bottom: 85px;
 	height: 739px;
 	background-image: url("img/offers-bg.png");
 	background-size: cover;
@@ -22,9 +23,11 @@
 
 			&:hover{
 				color: @offers-link-hover;
+				transition: all 0.3s ease 0s;
 			}
 
 			&:first-child{
+				color: @offers-link-hover;
 				margin-right: 50px;
 			}
 		}

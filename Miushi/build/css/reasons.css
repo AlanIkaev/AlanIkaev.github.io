@@ -1,0 +1,176 @@
+.reasons {
+  margin-bottom: 85px;
+}
+.reasons .reasons__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 576px) {
+  .reasons .reasons__container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .reasons .reasons__container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .reasons .reasons__container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .reasons .reasons__container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 320px) and (max-width: 409px) {
+  .reasons .reasons__container {
+    justify-content: center;
+  }
+}
+.reasons .reasons__title-wrapper {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .reasons .reasons__title-wrapper {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .reasons .reasons__title-wrapper {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .reasons .reasons__title-wrapper {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .reasons .reasons__title-wrapper {
+    max-width: 1140px;
+  }
+}
+.reasons .reasons__title-wrapper .reasons__title {
+  font-family: Lemon Tuesday;
+  color: #32505a;
+  font-size: 3.75rem;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  margin-bottom: 45px;
+}
+@media (max-width: 500px) {
+  .reasons .reasons__title-wrapper .reasons__title {
+    font-size: 2.75rem;
+  }
+}
+.reasons .reasons__title-wrapper .reasons__title:before {
+  content: '';
+  display: inline-block;
+  background: url(../../global-img/dec-l.png);
+  width: 109px;
+  height: 40px;
+  margin-right: 37px;
+}
+@media (max-width: 500px) {
+  .reasons .reasons__title-wrapper .reasons__title:before {
+    width: 74px;
+    height: 27px;
+    margin-right: 23px;
+    background: url(../../global-img/dec-l-500.png);
+  }
+}
+.reasons .reasons__title-wrapper .reasons__title:after {
+  content: '';
+  display: inline-block;
+  background: url(../../global-img/dec-r.png);
+  width: 109px;
+  height: 40px;
+  margin-left: 37px;
+}
+@media (max-width: 500px) {
+  .reasons .reasons__title-wrapper .reasons__title:after {
+    width: 74px;
+    height: 27px;
+    margin-left: 23px;
+    background: url(../../global-img/dec-r-500.png);
+  }
+}
+@media (min-width: 320px) and (max-width: 749px) {
+  .reasons .reasons__title-wrapper .reasons__title {
+    font-size: 2.75rem;
+  }
+  .reasons .reasons__title-wrapper .reasons__title:before,
+  .reasons .reasons__title-wrapper .reasons__title:after {
+    display: none;
+  }
+}
+@media (min-width: 750px) and (max-width: 992px) {
+  .reasons .reasons__title-wrapper .reasons__title {
+    font-size: 2.3rem;
+  }
+}
+.reasons .reasons__item {
+  width: 190px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.reasons .reasons__item .reasons__item-img {
+  display: block;
+  margin: 0 auto 30px auto;
+}
+.reasons .reasons__item .reasons__item-text {
+  color: #4c4c4c;
+  font-family: Open Sans;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+}
+.reasons .reasons__button,
+.reasons .reasons__button-reset {
+  text-align: center;
+  font-family: Open Sans;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #fd4f10;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  display: none;
+  color: #fd4f10;
+  border: 1px solid #fd4f10;
+  width: 292px;
+  height: 41px;
+  background-color: #ffffff;
+}
+.reasons .reasons__button:hover,
+.reasons .reasons__button-reset:hover {
+  -webkit-box-shadow: 0px 7px 33px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 33px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 33px -5px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 409px) {
+  .reasons .reasons__button,
+  .reasons .reasons__button-reset {
+    display: block;
+  }
+}
+.reasons .reasons__button-reset {
+  display: none;
+}
