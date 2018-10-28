@@ -1,0 +1,131 @@
+@import (reference) "../../global-styles/styles.less";
+
+.form{
+	margin-bottom: 85px;
+	padding-top: 80px;
+	height: 356px;
+	background-image: url("img/formbg.jpg");
+	background-size: cover;
+	background-position: left center;
+
+	@media (min-width: 320px) and (max-width: 767px){
+		padding-top: 50px;
+		height: 518px;
+	}
+
+	.form__container{
+		.container();
+		margin: 0 auto;
+
+		.form__span,.form__title{
+			user-select: none;
+		}
+
+		.form__span{
+			display: block;
+			font-family: Open Sans;
+			color: @white;
+			font-size: 1rem;
+			font-weight: 400;
+			font-style: normal;
+			margin-bottom: 10px;
+		}
+
+		.form__title{
+			font-family: Lemon Tuesday;
+			color: @white;
+			font-size: 3.375rem;
+			font-weight: 400;
+			font-style: normal;
+			margin-bottom: 30px;
+
+			@media (min-width: 320px) and (max-width: 767px){
+				font-size: 2.75rem;
+			}
+		}
+
+		.form__main{
+			width: 765px;
+			display: flex;
+			display: -webkit-flex;
+			justify-content: space-between;
+			align-items: baseline;
+			margin-bottom: 30px;
+
+			@media (min-width: 320px) and (max-width: 767px){
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+				justify-content: center;
+				flex-direction: column;
+			}
+
+			@media (min-width: 768px) and (max-width: 950px){
+				width: 720px;
+			}
+		}
+
+		.form__name,.form__telephone{
+			font-family: Open Sans;
+			color: @white;
+			font-size: 0.875rem;
+			font-weight: 400;
+			font-style: normal;
+			padding-left: 15px;
+			width: 240px;
+			height: 38px;
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid @white;
+
+			@media (min-width: 320px) and (max-width: 768px){
+				width: 100%;
+				margin-bottom: 40px;
+			}
+
+			@media (min-width: 768px) and (max-width: 950px){
+				width: 220px;
+			}
+		}
+
+		.form__name::-webkit-input-placeholder,
+		.form__telephone::-webkit-input-placeholder{
+			font-family: Open Sans;
+			color: @white;
+			font-size: 0.875rem;
+			font-weight: 400;
+			font-style: normal;
+		}
+
+		.form__name:focus,
+		.form__telephone:focus{
+			background-color: @input-focus; 
+		}
+
+		.form__button{
+			width: 192px;
+			height: 48px;
+			font-size: 0.875rem;
+			border: none;
+			cursor: pointer;
+			.btn();
+
+			@media (min-width: 320px) and (max-width: 767px){
+				width: 100%;
+			}
+
+			@media (min-width: 767px) and (max-width: 950px){
+				width: 220px;
+			}
+		}
+
+		.form__warning{
+			font-family: Open Sans;
+			color: @white;
+			font-size: 0.75rem;
+			font-weight: 400;
+			font-style: normal;
+			user-select: none;
+		}
+	}
+}
