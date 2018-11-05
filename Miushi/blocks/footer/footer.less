@@ -166,6 +166,7 @@
 		font-weight: 600;
 		font-style: normal;
 		position: relative;
+		transition: transform 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 		&:after{
 			content: '';
@@ -183,12 +184,21 @@
 			transform: rotate(135deg);
 		}
 	}
+	
+	.footer__mobile-menu-list-block{
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	}
 
-	.footer__mobile-menu-submenu{
-		display: none;
+	.--open .footer__mobile-menu-list-block{
+		max-height: 500px;
+	}
+
+ 	.footer__mobile-menu-submenu{
 		background-color: @footer-mobile-color;
 		padding: 24px 0 24px 17px;
-	}
+	} 
 
 	.--open .footer__mobile-menu-submenu{
 		display: block;
