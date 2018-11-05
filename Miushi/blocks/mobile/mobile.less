@@ -37,28 +37,129 @@
 		}
 	}
 
-	.mobile__menu{
+	.mobile__menu-burger{
 		position: relative;
 		width: 20px;
 		height: 14px;
 		margin-right: 50px;
+		z-index: 999;
+	 	-webkit-transform: rotate(0deg);
+	  	-moz-transform: rotate(0deg);
+	  	-o-transform: rotate(0deg);
+	  	transform: rotate(0deg);
+	  	-webkit-transition: .5s ease-in-out;
+	  	-moz-transition: .5s ease-in-out;
+	  	-o-transition: .5s ease-in-out;
+	  	transition: .5s ease-in-out;
+	  	cursor: pointer;
 
-		.mobile__menu-line{
+	  	&.open{
+	  		.mobile__menu-burger-line{
+	  			&:nth-child(1),&:nth-child(6){
+				  -webkit-transform: rotate(45deg);
+				  -moz-transform: rotate(45deg);
+				  -o-transform: rotate(45deg);
+				  transform: rotate(45deg);	  				
+	  			}
+
+	  			&:nth-child(2),&:nth-child(5){
+				  -webkit-transform: rotate(-45deg);
+				  -moz-transform: rotate(-45deg);
+				  -o-transform: rotate(-45deg);
+				  transform: rotate(-45deg);		  				
+	  			}
+
+				&:nth-child(2){
+				    left: calc(50% - 5px);					
+				}
+
+				&:nth-child(3){
+					left: -50%;
+					opacity: 0;
+				}
+
+				&:nth-child(4){
+					left: 100%;
+					opacity: 0;
+				}
+
+				&:nth-child(5){
+					top: 6px;
+				}
+
+				&:nth-child(6){
+					left: 5px;
+					top: 6px;
+				}
+	  		}
+	  	}
+
+		.mobile__menu-burger-line{
+			display: block;
 			position: absolute;
-			width: 100%;
+			width: 50%;
 			height: 2px;
-			background-color: @mobile-menu;
+			background-color: @rifle-green;
+		    -webkit-transform: rotate(0deg);
+		    -moz-transform: rotate(0deg);
+		    -o-transform: rotate(0deg);
+		    transform: rotate(0deg);
+		    -webkit-transition: .25s ease-in-out;
+		    -moz-transition: .25s ease-in-out;
+		    -o-transition: .25s ease-in-out;
+		    transition: .25s ease-in-out;
 
-			&:first-child{
+		    &:nth-child(even){
+		    	left: 50%;
+		    }
+
+		    &:nth-child(odd){
+		    	left: 0;
+		    }
+
+			&:nth-child(1),&:nth-child(2){
 				top:0;
 			}
 
-			&:nth-child(2){
+			&:nth-child(3),&:nth-child(4){
 				top: 5px;
 			}
 
-			&:last-child{
+			&:nth-child(5),&:nth-child(6){
 				top: 10px;
+			}
+		}
+	}
+}
+
+.mobile__menu{
+	position: relative;
+	bottom: -10px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+	&.active{
+		max-height: 230px;
+	}
+	.mobile__menu-list{
+		text-align: center;
+
+		.mobile__menu-list-item{
+			display: block;
+			font-family: Lemon Tuesday;
+			font-size: 1.25rem;
+			font-style: bold;
+			color: @reasons-clr;
+			transition: all 0.3s ease;
+			line-height: 2;
+			user-select: none;
+		  	-webkit-user-select: none;
+		  	-moz-user-select: none;
+		  	-ms-user-select: none;
+
+			&:hover,&:active{
+				color: @light-green;
 			}
 		}
 	}

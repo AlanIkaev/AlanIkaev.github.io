@@ -5,7 +5,6 @@ const accordionHeaders = accordion.querySelectorAll('.footer__mobile-menu-header
 function toggleAccordion(e){
 	const itemHeader = e.target.closest('.footer__mobile-menu-header');
 	if (itemHeader){
-		const shevron = itemHeader.querySelector('.footer__mobile-menu-chevron');
 		itemHeader.parentNode.classList.toggle('--open');
 		toggleOtherItems(itemHeader);
 	}
