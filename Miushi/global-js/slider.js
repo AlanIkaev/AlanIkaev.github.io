@@ -29,10 +29,12 @@ $(document).ready(function(){
 
 	$('.sets-slider').slick({
 	  slidesToShow: 1,
-	  arrows: false,
+	  arrows: true,
 	  dots: true,
 	  mobileFirst: true,
 	  variableWidth: true,
+	  nextArrow: '<div class="slider-arrow right"><span></span><span></span><span></span><span></span><span></span></div>',
+	  prevArrow: '<div class="slider-arrow left"><span></span><span></span><span></span><span></span><span></span></div>',
 	  responsive:[
 	  	 {
 	  	 	breakpoint:300,

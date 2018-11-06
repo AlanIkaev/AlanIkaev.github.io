@@ -44,6 +44,7 @@
 .sets-slider__item {
     display: block;
     position: relative;
+    cursor: pointer;
     width: 263px;
     height: 461px;
     background-color: @white;
@@ -71,6 +72,18 @@
     vertical-align: center;
     font-size: 0.875rem;
     font-weight: 600;
+    text-align: left;
+    padding-left: 35px;
+    outline: none;
+
+    &:after{
+        content: url("icons/cart.png");
+        width: 22px;
+        height: 20px;
+        position: absolute;
+        top: 12px;
+        right: 25px;
+    }
 }
 
 .sets-slider__button-p {
@@ -142,11 +155,15 @@
     user-select: none;
 }
 .sets-slider__digit {
+    width: 30px;
     font-family: Open Sans;
     font-size: 0.875rem;
     font-weight: 400;
+    border: none;
+    text-align: center;
+    user-select: none;
 }
-.sets-slider__plus, .sets-slider__minus{
+.plus, .minus{
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -156,9 +173,10 @@
     cursor: pointer;
     font-size: 13px;
     color: #808080;
-    transition: transform 0.3s cubic-bezier(0,.99,.44,1.4);
+    transition: 0.3s ease;
     &:hover {
-        border: 0.5px solid #808080;
-        transform: scale(1.2);
+        background-color: @black;
+        color: white;
+        border: @black;
     }
 }
