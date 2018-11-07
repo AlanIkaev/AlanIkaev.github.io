@@ -4,41 +4,57 @@
 	margin-bottom: 85px;
 
 	.reasons__container{
-		.container();
-		margin: 0 auto;
+		.container();	
+	}
+
+	.reasons__items-wrapper{
+		margin-bottom: 70px;
 		display: flex;
 		display: -webkit-flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		transition: max-height 0.5s;
+
+		&.open{
+			max-height: 2244px;
+		}
 
 		@media (min-width: 320px) and (max-width: 409px){
-			justify-content: center;			
-		}	
+			justify-content: center;	
+			max-height: 585px;
+			overflow-y: hidden;	
+		}
+
+		@media (min-width: 767px) and (max-width: 1199px){
+			justify-content: space-around;
+		}
 	}
+	
+	.reasons__title{
+		.title();
+		margin-bottom: 100px;
 
-	.reasons__title-wrapper{
-		.container();
-		.reasons__title{
-			.title();
+		@media (min-width: 320px) and (max-width: 749px){
+			font-size: 2.75rem;
 
-			@media (min-width: 320px) and (max-width: 749px){
-				font-size: 2.75rem;
-
-				&:before,&:after{
-					display: none;
-				}
+			&:before,&:after{
+				display: none;
 			}
+		}
 
-			@media (min-width: 750px) and (max-width: 992px){
-				font-size: 2.3rem;
-			}
-		}	
-	}
+		@media (min-width: 750px) and (max-width: 992px){
+			font-size: 2.3rem;
+		}
+	}	
 
 	.reasons__item{
 		width: 190px;
 		text-align: center;
 		margin-bottom: 100px;
+
+		&:last-child{
+			margin: 0;
+		}
 
 		.reasons__item-img{
 			display: block;
@@ -62,6 +78,7 @@
 		width: 292px;
 		height: 41px;
 		background-color: @white;
+		margin: 0 auto;
 
 		@media (max-width: 409px){
 			display: block;
